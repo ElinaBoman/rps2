@@ -1,34 +1,4 @@
-<!DOCTYPE html>
 
-<html>
-
-<head>
-
-    <title>Rock, Paper, Scissors, Lizard, Spock</title>
-
-</head>
-
-<body>
-
-    <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-
-    <p>Choose one of the following: Rock, Paper, Scissors, Lizard, or Spock.</p>
-
-    <button id="rock">Rock</button>
-
-    <button id="paper">Paper</button>
-
-    <button id="scissors">Scissors</button>
-
-    <button id="lizard">Lizard</button>
-
-    <button id="spock">Spock</button>
-
-    <div id="result"></div>
-
-
-
-    <script>
 
         const options = ["rock", "paper", "scissors", "lizard", "spock"];
 
@@ -52,17 +22,10 @@
 
 
 
-        function computerChoose() {
-
-            const randomIndex = Math.floor(Math.random() * 5);
-
-            return options[randomIndex];
-
-        }
+       
 
 
-
-        function determineWinner(userChoice, computerChoice) {
+        function checkWinner(userChoice, computerChoice) {
 
             if (userChoice === computerChoice) {
 
