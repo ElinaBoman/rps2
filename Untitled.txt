@@ -1,0 +1,21 @@
+
+usernameSubmitBtn.addEventListener("click", function() {
+    event.preventDefault();
+
+
+    //gammla koden med submitknapp 
+    startGame.addEventListener("submit", handleSubmit);
+    function handleSubmit(event) {
+    event.preventDefault();
+
+    
+    gameRulesSection.classList.add("hide");
+        gameAreaSection.classList.remove("hide");
+
+
+  // Add hide function to section.
+    usernameSection.classList.remove("hide");
+    gameRulesSection.classList.add("hide");
+    gameAreaSection.classList.add("hide");
+
+ 

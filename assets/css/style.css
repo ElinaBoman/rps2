@@ -1,0 +1,23 @@
+#enter-username-section {
+    background-color: burlywood;
+}
+
+#game-rules-section {
+    background-color: darkgoldenrod;
+}
+
+#game-area {
+    background-color: grey;
+}
+
+.hide {
+    display: none;
+}
+
+.home-button {
+    background-color: burlywood;
+}
+#home-button {
+    width: 40px;
+    height: 40px;
+}
