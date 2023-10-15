@@ -1,5 +1,5 @@
 
-
+const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 document.querySelectorAll("button").forEach((button) => {
 
     button.addEventListener("click", () => {
@@ -24,6 +24,7 @@ document.querySelectorAll("button").forEach((button) => {
     const randomIndex = Math.floor(Math.random() * 5);
 
     return options[randomIndex];
+    
 
 }
 /* This function is to check who the winner is.
@@ -60,6 +61,14 @@ function checkWinner(userChoice, computerChoice) {
         return "You lose! :'(";
 
     }
+
+}
+
+function displayResult(userChoice, computerChoice, result) {
+
+    const resultElement = document.getElementById("result");
+
+    resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
 
 }
 
