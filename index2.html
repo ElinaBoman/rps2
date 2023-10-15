@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+</head>
+
+<body>
+
+    <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+
+    <p>Choose one of the following: Rock, Paper, Scissors, Lizard, or Spock.</p>
+
+    <button id="rock">Rock</button>
+
+    <button id="paper">Paper</button>
+
+    <button id="scissors">Scissors</button>
+
+    <button id="lizard">Lizard</button>
+
+    <button id="spock">Spock</button>
+
+    <div id="result"></div>
+
+
+
+    <script>
+
+        const options = ["rock", "paper", "scissors", "lizard", "spock"];
+
+
+
+        document.querySelectorAll("button").forEach((button) => {
+
+            button.addEventListener("click", () => {
+
+                const userChoice = button.id;
+
+                const computerChoice = computerChoose();
+
+                const result = determineWinner(userChoice, computerChoice);
+
+                displayResult(userChoice, computerChoice, result);
+
+            });
+
+        });
+
+
+
+        function computerChoose() {
+
+            const randomIndex = Math.floor(Math.random() * 5);
+
+            return options[randomIndex];
+
+        }
+
+
+
+        function determineWinner(userChoice, computerChoice) {
+
+            if (userChoice === computerChoice) {
+
+                return "It's a tie!";
+
+            }
+
+            if (
+
+                (userChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
+
+                (userChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
+
+                (userChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
+
+                (userChoice === "lizard" && (computerChoice === "spock" || computerChoice === "paper")) ||
+
+                (userChoice === "spock" && (computerChoice === "scissors" || computerChoice === "rock"))
+
+            ) {
+
+                return "YOU WIN HOOOOORAY!";
+
+            } else {
+
+                return "Computer wins!";
+
+            }
+
+        }
+
+
+
+        function displayResult(userChoice, computerChoice, result) {
+
+            const resultElement = document.getElementById("result");
+
+            resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
