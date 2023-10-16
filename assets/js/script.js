@@ -113,3 +113,11 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 
         resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
     }
+
+    // function incrementScore() {
+
+    }
+
+    //function incrementWrongAnswer() {
+
+    }
