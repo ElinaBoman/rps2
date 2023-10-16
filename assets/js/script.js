@@ -1,3 +1,4 @@
+
      // Constant variables
     const loginForm = document.getElementById("login-form");
     const usernameSection = document.getElementById("enter-username-section");
@@ -51,6 +52,7 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
         const computerChoice = computerChoose();
         const result = checkWinner(userChoice, computerChoice);
         displayResult(userChoice, computerChoice, result);
+        
 
         });
 
@@ -75,15 +77,12 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
      there is going to bo be a messege: You win!. 
      If the computer choice isn't either of theese 2, there is a else message: You lose!.*/
 
-    function checkWinner(userChoice, computerChoice) {
-
-        if (userChoice === computerChoice) {
-
-            return "It's a tie!";
-
-        }
+   
+     function checkWinner(userChoice, computerChoice) {
+    
         // Game rules
-        if (
+
+        let isCorrect = (
 
             (userChoice === "ROCK" && (computerChoice === "SCISSORS" || computerChoice === "LIZARD")) ||
 
@@ -93,16 +92,25 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 
             (userChoice === "LIZARD" && (computerChoice === "SPOCK" || computerChoice === "PAPER")) ||
 
-            (userChoice === "SPOCK" && (computerChoice === "SCISSORS" || computerChoice === "ROCK"))
+            ( userChoice === "SPOCK" && (computerChoice === "SCISSORS" || computerChoice === "ROCK"))
 
-        ) {
-
-            return "YOU WIN HOOOOORAY!:D";
-
-        } else {
-
-            return "You lose! :'(";
-
+        )
+        if (userChoice === computerChoice) {
+            
+            return "It's a tie!";
+          
+        }
+       // This adds score to player if isCorrect function is started.
+        else if (isCorrect) {
+        incrementScore(); 
+        return "YOU WIN HOOOOORAY!:D";
+        
+        } 
+        //This adds score to computer is the earlier statements arn't fired.
+        else {
+        incrementWrongAnswer()    
+        return "You lose!";
+        
         }
 
     }
@@ -114,10 +122,12 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
         resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
     }
 
-    // function incrementScore() {
-
+     function incrementScore() {
+     let playerScore = parseInt(document.getElementById("player-score").innerText);
+     document.getElementById("player-score").innerText = ++playerScore;
     }
 
-    //function incrementWrongAnswer() {
-
+    function incrementWrongAnswer() {
+    let computerScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++computerScore;
     }
