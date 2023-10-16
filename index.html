@@ -45,28 +45,35 @@
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
         
         <p>Choose one of the following: Rock, Paper, Scissors, Lizard, or Spock.</p>
-       
+       <div></div>
         <div id="player-button">
        
-            <button id="ROCK">Rock</button>
+            <button id="ROCK" data-choice="0"><img src="assets/images/rock.png" alt="Rock-button" class="player-button-img" aria-label="Rock-button" ></button>
         
-        <button id="PAPER">Paper</button>
+        <button id="PAPER" data-choice="1"><img src="assets/images/paper.png" alt="Paper-button" class="player-button-img" aria-label="Paper-button"></button>
         
-        <button id="SCISSORS">Scissors</button>
+        <button id="SCISSORS" data-choice="2"><img src="assets/images/scissor.png" alt="Scissors-button" class="player-button-img" aria-label="Scissors-button"></button>
         
-        <button id="LIZARD">Lizard</button>
+        <button id="LIZARD" data-choice="3"><img src="assets/images/lizard.png" alt="Lizard-button" class="player-button-img" aria-label="Lizard-button"></button>
         
-        <button id="SPOCK">Spock</button>
+        <button id="SPOCK" data-choice="4"><img src="assets/images/spock.png" alt="Spock-button" class="player-button-img" aria-label="Spock-button"></button>
         
-        <div id="result"></div>
+       
     </div>
     <!--score area code  inspired by Code institutes Love Math project-->
-    <div class="score-area">
-    <!--Display Score of player and computer -->
-    <div class="score">
-        <p class="scores">Player: <h2 id="player-score">0</h2></p>
-        <p class="scores">Computer: <h2 id="computer-score">0</h2></p>
-        </div>
+     <div id="result"></div>
+    <div class="score-area"> 
+       
+    <!--Display player score -->
+    <div class="player-score">
+        <p class="scores">Player: <span id="player-score">0</span></p>
+       <img id="player-img" src="assets/images/lizard.png" alt="Rock paper scissor">
+    </div>
+    <!--Display computer score-->
+    <div class="computer">
+        <p class="scores">Computer: <span id="computer-score">0</span></p>
+        <img id="computer-img" src="assets/images/lizard.png" alt="Rock paper scissor">
+    </div>
     </div>
 </section>
     <script src="assets/js/script.js"></script>

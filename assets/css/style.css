@@ -50,6 +50,35 @@ align-self: center;
 
 #game-area {
     background-color: grey;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-button-img {
+    height: 100px;
+    width: 100;
+    border: solid 2px darkslategray;
+    border-radius: 50%;
+
+}
+
+/* score area*/
+.score-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*img result*/
+#player-img {
+    height: 100px;
+    width: 100px;
+}
+
+#computer-img {
+    height: 100px;
+    width: 100px;
 }
 
 .hide {
@@ -63,3 +92,4 @@ align-self: center;
     width: 40px;
     height: 40px;
 }
+

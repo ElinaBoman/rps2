@@ -7,7 +7,9 @@
     const gameRulesSection = document.getElementById("game-rules-section");
     const gameAreaSection = document.getElementById("game-area");
     const playerButton = document.getElementById("playerButton");
-    const startGame = document.getElementsByClassName("game-rules-btn")
+    const startGame = document.getElementsByClassName("game-rules-btn");
+    const playerImage = document.getElementById("player-img");
+    const computerImage = document.getElementById("computer-img");
     
     const homeUrl = 'https://8000-elinaboman-rps2-2udw505m6g.us2.codeanyapp.com/';
     const homeButton = document.getElementById("home-button");
@@ -77,7 +79,18 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
      there is going to bo be a messege: You win!. 
      If the computer choice isn't either of theese 2, there is a else message: You lose!.*/
 
-   
+for (let button of buttons) {
+    button.addEventListener("click", function (){
+        let playerChoice = this.getAttribute ("data-choice");
+        playGame(playerChoice)
+    })
+}
+
+function playGame (playerChoice) {
+    playerImage.src= `assets/images/${choices[playerChoice]}.png`;
+    playerImage.alt = choices [playerChoice];
+}
+
      function checkWinner(userChoice, computerChoice) {
     
         // Game rules
