@@ -28,40 +28,36 @@
     <section id="game-rules-section" class="txt-align">
         <h1>Game rules:</h1>
         <div >
-        Rock crushes Scissors: Rock defeats Scissors.
-        Scissors cuts Paper: Scissors defeat Paper.
-        Paper covers Rock: Paper defeats Rock.
-        Rock crushes Lizard: Rock defeats Lizard.
-        Lizard poisons Spock: Lizard defeats Spock.
-        Spock smashes Scissors: Spock defeats Scissors.
-        Scissors decapitates Lizard: Scissors defeat Lizard.
-        Lizard eats Paper: Lizard defeats Paper.
-        Paper disproves Spock: Paper defeats Spock.
+            <ul class="game-rules-list">
+                <li>Rock crushes Scissors: Rock defeats Scissors.</li>
+                <li>Scissors cuts Paper: Scissors defeat Paper.</li>
+                <li>Paper covers Rock: Paper defeats Rock.</li>
+                <li>Rock crushes Lizard: Rock defeats Lizard.</li>
+                <li>Lizard poisons Spock: Lizard defeats Spock.</li>
+                <li>Scissors decapitates Lizard: Scissors defeat Lizard.</li>
+                <li>Lizard eats Paper: Lizard defeats Paper.</li>
+                <li>Paper disproves Spock: Paper defeats Spock.</li>
+                <li>Spock vaporizes Rock: Spock defeats Rock.</li>
+                <li>Spock smashes Scissors: Spock defeats Scissors.</li>
+            </ul>
+       
+       
+       
+       
+       
+
+      
+
+      
         Spock vaporizes Rock: Spock defeats Rock.</div>
         <button class="game-rules-btn">Ok, let's go!</button>
     </section>
 
 <section id="game-area" class="txt-align">
-        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+        <h1>Choose your champion</h1>
         
-        <p>Choose one of the following: Rock, Paper, Scissors, Lizard, or Spock.</p>
-       <div></div>
-        <div id="player-button">
-       
-            <button id="ROCK" data-choice="0"><img src="assets/images/rock.png" alt="Rock-button" class="player-button-img" aria-label="Rock-button" ></button>
-        
-        <button id="PAPER" data-choice="1"><img src="assets/images/paper.png" alt="Paper-button" class="player-button-img" aria-label="Paper-button"></button>
-        
-        <button id="SCISSORS" data-choice="2"><img src="assets/images/scissor.png" alt="Scissors-button" class="player-button-img" aria-label="Scissors-button"></button>
-        
-        <button id="LIZARD" data-choice="3"><img src="assets/images/lizard.png" alt="Lizard-button" class="player-button-img" aria-label="Lizard-button"></button>
-        
-        <button id="SPOCK" data-choice="4"><img src="assets/images/spock.png" alt="Spock-button" class="player-button-img" aria-label="Spock-button"></button>
-        
-       
-    </div>
-    <!--score area code  inspired by Code institutes Love Math project-->
-     <div id="result"></div>
+    <!--this div sets text for result and player choice-->
+  
     <div class="score-area"> 
        
     <!--Display player score -->
@@ -74,6 +70,23 @@
         <p class="scores">Computer: <span id="computer-score">0</span></p>
         <img id="computer-img" src="assets/images/lizard.png" alt="Rock paper scissor">
     </div>
+    </div>
+       <div></div>
+        <div id="player-button">
+       
+        <button id="ROCK" data-choice="0"><img src="assets/images/rock.png" alt="Rock-button" class="player-button" aria-label="Rock-button" ></button>
+        
+        <button id="PAPER" data-choice="1"><img src="assets/images/paper.png" alt="Paper-button" class="player-button" aria-label="Paper-button"></button>
+        
+        <button id="SCISSORS" data-choice="2"><img src="assets/images/scissor.png" alt="Scissors-button" class="player-button" aria-label="Scissors-button"></button>
+        
+        <button id="LIZARD" data-choice="3"><img src="assets/images/lizard.png" alt="Lizard-button" class="player-button" aria-label="Lizard-button"></button>
+        
+        <button id="SPOCK" data-choice="4"><img src="assets/images/spock.png" alt="Spock-button" class="player-button" aria-label="Spock-button"></button>
+        
+       
+    </div>
+  <div id="result"> 
     </div>
 </section>
     <script src="assets/js/script.js"></script>

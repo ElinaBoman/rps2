@@ -1,5 +1,7 @@
 länkar till bilder
 https://www.vecteezy.com/vector-art/627703-home-icon-symbol-sign
+PNG EGG
+
 
 
         <p class="scores">Player: <span id="player-score">0</span></p>
