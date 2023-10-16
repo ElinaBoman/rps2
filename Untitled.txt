@@ -6,3 +6,18 @@ PNG EGG
 
         <p class="scores">Player: <span id="player-score">0</span></p>
         <p class="scores">Computer: <span id="computer-score">0</span></p>
+
+
+           //To change images when clicked. Not working.
+    for (let button of buttons) {
+        button.addEventListener("click", function (){
+        let playerChoice = this.getAttribute ("data-choice");
+        playGame(playerChoice)
+    });
+    }
+
+       
+    function playGame (playerChoice) {
+    playerImage.src= `assets/images/${choices[playerImage]}.png`;
+    playerImage.alt = choices [playerImage];
+    }
