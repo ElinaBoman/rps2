@@ -1,7 +1,7 @@
 
 
 html {
-    background-color: rgb(130, 173, 130);
+    background-color: #FBFCF8;
     padding: 50px;
     align-items: center;
 
@@ -18,11 +18,12 @@ text-align: center;
 }
 
 body {
-    background-color: rgba(68, 68, 68, 0.9);
+    background-color: #FFFF;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 50px;
+    border-radius: 5%;
     
 
 } 
@@ -38,21 +39,25 @@ body {
 }
 
 #enter-username-section {
-border: 1px solid black;
+border: 1px solid ;
 left: 50%;
 right: 50%;
 align-self: center;
+background-color: rgba(68, 68, 68, 0.5);
+border-radius: 15%;
 }
 
 #game-rules-section {
-    background-color: darkgoldenrod;
+    background-color: #FBFCF8;
+    border-radius: 15%;
 }
 
 #game-area {
-    background-color: grey;
+    background-color: #FBFCF8;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15%;
 }
 
 .player-button-img {
@@ -86,7 +91,7 @@ align-self: center;
 }
 
 .home-button {
-    background-color: burlywood;
+    background-color: #FBFCF8;
 }
 #home-button {
     width: 40px;
