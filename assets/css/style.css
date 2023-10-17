@@ -77,9 +77,16 @@ border: solid 2px rgb(241, 192, 101);
 
 .player-button {
     height: 100px;
-    width: 100;
+    width: 100px;
     border: solid 2px darkslategray;
     border-radius: 50%;
+    
+}
+
+.player-score, .computer {
+    width: 300px;
+    height: 300px;
+    border: solid 2px rgb(241, 192, 101);
 
 }
 
