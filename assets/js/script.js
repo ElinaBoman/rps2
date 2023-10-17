@@ -15,6 +15,7 @@ const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
 const errorElement = document.getElementById("error");
 const enterUserName = document.getElementById("gamer-tag-info");
+const gameTag = document.getElementById("player-nametag");
 //Add hide function to section.
 usernameSection.classList.remove("hide");
 gameRulesSection.classList.add("hide");
@@ -51,14 +52,14 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     const enterUsername = username.value.trim();
     //let errorMsg = document.getElementById("error");
-        if (enterUsername === "") {
-            enterUserName.innerText = `Please be creative, insert username!`;
-            enterUserName.style.color = "red";
-            enterUserName.style.fontSize = "100%";
-        } else {
-            gameRulesSection.classList.remove("hide");
-            usernameSection.classList.add("hide");
-        }
+    if (enterUsername === "") {
+        enterUserName.innerText = `Please be creative, insert username!`;
+        enterUserName.style.color = "red";
+        enterUserName.style.fontSize = "100%";
+    } else {
+        gameRulesSection.classList.remove("hide");
+        usernameSection.classList.add("hide");
+    }
 });
 gameRulesSection.addEventListener("click", function (event) {
     event.preventDefault();
@@ -79,6 +80,11 @@ document.querySelectorAll("button").forEach((button) => {
         //displayResult(userChoice, computerChoice, result);
     });
 });
+
+function changePlayertag() {
+    gameTag.innerText = `${username.value}`;
+};
+
 /* This function is for the computer to make a choice.
 From a random index a hole number is going to be choosen.
 Then it's going to be multiplied with 5 scince there are 5 different options.*/
