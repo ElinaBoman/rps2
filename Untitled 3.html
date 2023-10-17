@@ -1,0 +1,14 @@
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let messages = [];
+    const enteredUsername = username.value.trim(); // Moved this line here
+    if (enteredUsername === "") {
+        messages.push("Please enter a username");
+        // You can display these messages or take other actions as needed
+        // For example, you can display them in an error message div
+        errorMessages.innerHTML = messages.join("<br>");
+    } else {
+        gameRulesSection.classList.remove("hide");
+        form.classList.add("hide");
+    }
+});
