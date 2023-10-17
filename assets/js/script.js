@@ -50,10 +50,10 @@ homeButton.addEventListener("click", function () {
 // This section will remove the rulearea-section and then show gamearea-section.
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-    let messages = [];
     const enteredUsername = username.value.trim();
     if (enteredUsername === "") {
-        messages.push("Please enter a username");
+        errorElement.inner.HTML = `Please enter username to play!`;
+        //messages.push("Please enter a username");
         usernameSection.classList.add("hide");
         gameRulesSection.classList.remove("hide");
     } else {

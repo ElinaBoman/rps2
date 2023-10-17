@@ -1,14 +1,19 @@
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    let messages = [];
-    const enteredUsername = username.value.trim(); // Moved this line here
-    if (enteredUsername === "") {
-        messages.push("Please enter a username");
-        // You can display these messages or take other actions as needed
-        // For example, you can display them in an error message div
-        errorMessages.innerHTML = messages.join("<br>");
-    } else {
-        gameRulesSection.classList.remove("hide");
-        form.classList.add("hide");
-    }
-});
+#error {
+color: red;
+/* Set the text color to red for emphasis */
+font-weight: bold;
+/* Make the text bold for better visibility */
+margin-top: 10px;
+/* Add spacing above the error message */
+/* You can further style it with background color, padding, border, etc. */
+/* Example styles for a bordered error message with a light background: */
+background-color: #ffe8e8;
+/* Light red background */
+padding: 10px;
+/* Add some padding for spacing inside the message box */
+border: 1px solid #ff0000;
+/* Red border */
+border-radius: 5px;
+/* Rounded corners for the message box */
+/* Other styles as needed */
+}
