@@ -21,3 +21,12 @@ PNG EGG
     playerImage.src= `assets/images/${choices[playerImage]}.png`;
     playerImage.alt = choices [playerImage];
     }
+
+
+        showPanel(gameRulesSection);
+        hidePanel(usernameSection);
+
+        showPanel(gameAreaSection);
+        hidePanel(gameRulesSection);
+    gameRulesSection.classList.add("hide");
+    gameAreaSection.classList.remove("hide");

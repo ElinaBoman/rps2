@@ -14,45 +14,44 @@
     <!--Home button-->
     <div class="home">
         <button class="home-button">
-         <img id="home-button" src="/assets/images/illust58-6618-01.jpg" alt="home-button">
+            <img id="home-button" src="/assets/images/illust58-6618-01.jpg" alt="home-button">
         </button>
     </div>
     <section id="enter-username-section" class="txt-align">
         <h1>Welcome to RPSLS!</h1>
-            <form id="login-form" action="javascript:void(0)" onsubmit="">
-                <label for="user-name">Choose your name!</label>
-                <input class="user-name" type="text" placeholder="Enter a cool name">
-                <button class="submit-username-btn">Click me!</button>
-            </form>
+        <form id="login-form" action="javascript:void(0)" onsubmit="">
+            <label for="user-name">Choose your name!</label>
+            <input class="user-name" type="text" placeholder="Enter a cool name">
+            <button class="submit-username-btn">Click me!</button>
+        </form>
     </section>
     
     <section id="game-rules-section" class="txt-align">
         <h1>Game rules:</h1>
-            <div>
-                <ul class="game-rules-list">
-                    <li>Rock crushes Scissors: Rock defeats Scissors.</li>
-                    <li>Scissors cuts Paper: Scissors defeat Paper.</li>
-                    <li>Paper covers Rock: Paper defeats Rock.</li>
-                    <li>Rock crushes Lizard: Rock defeats Lizard.</li>
-                    <li>Lizard poisons Spock: Lizard defeats Spock.</li>
-                    <li>Scissors decapitates Lizard: Scissors defeat Lizard.</li>
-                    <li>Lizard eats Paper: Lizard defeats Paper.</li>
-                    <li>Paper disproves Spock: Paper defeats Spock.</li>
-                    <li>Spock vaporizes Rock: Spock defeats Rock.</li>
-                    <li>Spock smashes Scissors: Spock defeats Scissors.</li>
-                </ul>
-                
-        <img src="assets/images/rpsls.png" alt="Rock Paper Scissor Lizard Spock" aria-label="Picture of gamerules" class="game-rules-img">
+        <div>
+            <ul class="game-rules-list">
+                <li>Rock crushes Scissors: Rock defeats Scissors.</li>
+                <li>Scissors cuts Paper: Scissors defeat Paper.</li>
+                <li>Paper covers Rock: Paper defeats Rock.</li>
+                <li>Rock crushes Lizard: Rock defeats Lizard.</li>
+                <li>Lizard poisons Spock: Lizard defeats Spock.</li>
+                <li>Scissors decapitates Lizard: Scissors defeat Lizard.</li>
+                <li>Lizard eats Paper: Lizard defeats Paper.</li>
+                <li>Paper disproves Spock: Paper defeats Spock.</li>
+                <li>Spock vaporizes Rock: Spock defeats Rock.</li>
+                <li>Spock smashes Scissors: Spock defeats Scissors.</li>
+            </ul>    
+            <img src="assets/images/rpsls.png" alt="Rock Paper Scissor Lizard Spock" aria-label="Picture of gamerules" class="game-rules-img">
         </div>
-         <button>Ok, let's go!</button>
+        <button>Ok, let's go!</button>
     </section>
 
-<section id="game-area" class="txt-align">
+    <section id="game-area" class="txt-align">
         <h1>Choose your champion</h1>
         
-    <!--this div sets text for result and player choice-->
+        <!--this div sets text for result and player choice-->
         <div class="score-area"> 
-    <!--Display player score -->
+        <!--Display player score -->
             <div class="player-score">
                 <p class="scores">Player: <span id="player-score">0</span></p>
                 <img id="player-img" src="assets/images/lizard.png" alt="Rock paper scissor">
@@ -63,21 +62,14 @@
                 <img id="computer-img" src="assets/images/lizard.png" alt="Rock paper scissor">
             </div>
         </div>
-    
         <div id="player-button">
-       
-        <button id="ROCK" data-choice="0"><img src="assets/images/rock.png" alt="Rock-button" class="player-button" aria-label="Rock-button" ></button>
-        
-        <button id="PAPER" data-choice="1"><img src="assets/images/paper.png" alt="Paper-button" class="player-button" aria-label="Paper-button"></button>
-        
-        <button id="SCISSORS" data-choice="2"><img src="assets/images/scissor.png" alt="Scissors-button" class="player-button" aria-label="Scissors-button"></button>
-        
-        <button id="LIZARD" data-choice="3"><img src="assets/images/lizard.png" alt="Lizard-button" class="player-button" aria-label="Lizard-button"></button>
-        
-        <button id="SPOCK" data-choice="4"><img src="assets/images/spock.png" alt="Spock-button" class="player-button" aria-label="Spock-button"></button>
-        
-       
-    </div>
+            <button id="ROCK" data-choice="0"><img src="assets/images/rock.png" alt="Rock-button" class="player-button" aria-label="Rock-button" ></button>
+            <button id="PAPER" data-choice="1"><img src="assets/images/paper.png" alt="Paper-button" class="player-button" aria-label="Paper-button"></button>
+            <button id="SCISSORS" data-choice="2"><img src="assets/images/scissor.png" alt="Scissors-button" class="player-button" aria-label="Scissors-button"></button>
+            <button id="LIZARD" data-choice="3"><img src="assets/images/lizard.png" alt="Lizard-button" class="player-button" aria-label="Lizard-button"></button>
+            <button id="SPOCK" data-choice="4"><img src="assets/images/spock.png" alt="Spock-button" class="player-button" aria-label="Spock-button"></button>
+        </div>
+        <button id="reset-score">Reset score!</button>
         <!--<div id="result"></div>-->
     </section>
     <script src="assets/js/script.js"></script>

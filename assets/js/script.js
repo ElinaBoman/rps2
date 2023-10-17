@@ -12,12 +12,24 @@
     const computerImage = document.getElementById("computer-img");
     const homeUrl = 'https://8000-elinaboman-rps2-2udw505m6g.us2.codeanyapp.com/';
     const homeButton = document.getElementById("home-button");
-    
-  // Add hide function to section.
+    const resetScore = document.getElementById("reset-score")
+    //Add hide function to section.
     usernameSection.classList.remove("hide");
     gameRulesSection.classList.add("hide");
     gameAreaSection.classList.add("hide");
-   
+    
+    /*FÖR ATT GÖRA HIDE FUNKTIONEN ENKLARE.
+    function showPanel (panel) {
+        panel.classList.remove("show");
+    }
+    function hidePanel (panel) {
+        panel.classList.remove("hide")
+    }
+    */
+    /*
+    showPanel(usernameSection);
+    hidePanel(gameRulesSection);
+    hidePanel(gameAreaSection);*/
 
     document.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
@@ -29,62 +41,44 @@
     });
 
     loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    usernameSection.classList.add("hide");
-    gameRulesSection.classList.remove("hide");
+        event.preventDefault();
+        usernameSection.classList.add("hide");
+        gameRulesSection.classList.remove("hide");
     });
 
 // This section will remove the rulearea-section and then show gamearea-section.
     gameRulesSection.addEventListener("click", function (event) {
-    event.preventDefault();
-    gameRulesSection.classList.add("hide");
-    gameAreaSection.classList.remove("hide");
+        event.preventDefault();
+        gameRulesSection.classList.add("hide");
+        gameAreaSection.classList.remove("hide");
     });
     // Homebutton
     homeButton.addEventListener("click", function () {
-     window.location.href = homeUrl;
+        window.location.href = homeUrl;
     });  
-
-
-
-
-      
-
-
-    
-    
-    /* This function is for the computer to make a choice.
-     From a random index a hole number is going to be choosen. 
-     Then it's going to be multiplied with 5 scince there are 5 different options.*/
-   
 
     /* This function is to check who the winner is.
      If user choice is rock and the computer choice is scissors or lizard, 
      there is going to bo be a messege: You win!. 
      If the computer choice isn't either of theese 2, there is a else message: You lose!.*/
-     const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
+    const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
     document.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("click", () => {
+        button.addEventListener("click", () => {
         const userChoice = button.id;
-
         const computerChoice = computerChoose();
-
         const result = determineWinner(userChoice, computerChoice);
-
         displayResult(userChoice, computerChoice, result);
 
     });
 
     });
+    /* This function is for the computer to make a choice.
+    From a random index a hole number is going to be choosen. 
+    Then it's going to be multiplied with 5 scince there are 5 different options.*/
     function computerChoose() {
-         const randomIndex = Math.floor(Math.random() * 5);
+        const randomIndex = Math.floor(Math.random() * 5);
         return options[randomIndex];
 }
-    
-
-
-
-    
     function determineWinner(userChoice, computerChoice) {
         let isCorrect = (
             (userChoice === "ROCK" && (computerChoice === "SCISSORS" || computerChoice === "LIZARD")) ||
@@ -94,17 +88,17 @@
             ( userChoice === "SPOCK" && (computerChoice === "SCISSORS" || computerChoice === "ROCK"))
         )
         if (userChoice === computerChoice) {
-        return "It's a tie!";
+            return "It's a tie!";
         }
        // This adds score to player if isCorrect function is started.
         else if (isCorrect) {
-        incrementScore(); 
-        return "YOU WIN HOOOOORAY!";
+            incrementScore(); 
+            return "YOU WIN HOOOOORAY!";
         } 
         //This adds score to computer is the earlier statements arn't fired.
         else {
-        incrementWrongAnswer()    
-        return "You lose!";
+            incrementWrongAnswer()    
+            return "You lose!";
         }
     }
     //This shows playsers choice and computer choice.
@@ -114,11 +108,17 @@
     }
     // Theese are the functions to increment score.
     function incrementScore() {
-    let playerScore = parseInt(document.getElementById("player-score").innerText);
-    document.getElementById("player-score").innerText = ++playerScore;
+        let playerScore = parseInt(document.getElementById("player-score").innerText);
+        document.getElementById("player-score").innerText = ++playerScore;
     }
 
     function incrementWrongAnswer() {
-    let computerScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++computerScore;
+        let computerScore = parseInt(document.getElementById("computer-score").innerText);
+        document.getElementById("computer-score").innerText = ++computerScore;
     }
+
+resetScore.addEventListener("click", () => {
+   document.getElementById("player-score").innerText = [0];
+    document.getElementById("computer-score").innerText = [0];
+});
+
