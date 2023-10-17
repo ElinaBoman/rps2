@@ -14,10 +14,12 @@ const homeUrl = 'https://8000-elinaboman-rps2-2udw505m6g.us2.codeanyapp.com/';
 const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
 const errorElement = document.getElementById("error");
+const enterUserName = document.getElementById("gamer-tag-info");
 //Add hide function to section.
 usernameSection.classList.remove("hide");
 gameRulesSection.classList.add("hide");
 gameAreaSection.classList.add("hide");
+
 /*FÖR ATT GÖRA HIDE FUNKTIONEN ENKLARE.
 function showPanel (panel) {
     panel.classList.remove("show");
@@ -30,6 +32,7 @@ function hidePanel (panel) {
 showPanel(usernameSection);
 hidePanel(gameRulesSection);
 hidePanel(gameAreaSection);*/
+
 /*document.querySelectorAll("button").forEach((button) => {
 //button.addEventListener("click", () => {
     //const userChoice = button.id;
@@ -38,11 +41,7 @@ hidePanel(gameAreaSection);*/
     //displayResult(userChoice, computerChoice, result);
 // });
 });*/
-/*loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    usernameSection.classList.add("hide");
-    gameRulesSection.classList.remove("hide");
-});*/
+
 // Homebutton
 homeButton.addEventListener("click", function () {
     window.location.href = homeUrl;
@@ -50,31 +49,23 @@ homeButton.addEventListener("click", function () {
 // This section will remove the rulearea-section and then show gamearea-section.
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-    const enteredUsername = username.value.trim();
-    if (enteredUsername === "") {
-        errorElement.inner.HTML = `Please enter username to play!`;
-        //messages.push("Please enter a username");
-        usernameSection.classList.add("hide");
-        gameRulesSection.classList.remove("hide");
-    } else {
-        gameRulesSection.classList.remove("hide");
-        usernameSection.classList.add("hide");
-    }
+    const enterUsername = username.value.trim();
+    //let errorMsg = document.getElementById("error");
+        if (enterUsername === "") {
+            enterUserName.innerText = `Please be creative, insert username!`;
+            enterUserName.style.color = "red";
+            enterUserName.style.fontSize = "100%";
+        } else {
+            gameRulesSection.classList.remove("hide");
+            usernameSection.classList.add("hide");
+        }
 });
 gameRulesSection.addEventListener("click", function (event) {
     event.preventDefault();
     gameRulesSection.classList.add("hide");
     gameAreaSection.classList.remove("hide");
 });
-/* username = usernameInput.value.trim();
- if (username === "") {
-     usernameInput.innerText= `Please enter name`;
-     return;
- } else {
-     gameRulesSection.classList.remove("hide");
-     loginForm.classList.add("hide");
- }
-});*/
+
 /* This function is to check who the winner is.
  If user choice is rock and the computer choice is scissors or lizard,
  there is going to bo be a messege: You win!.
