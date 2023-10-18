@@ -1,3 +1,5 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 
 html {
@@ -24,6 +26,7 @@ body {
     flex-direction: column;
     padding: 50px;
     border-radius: 5%;
+    font-style: 
 } 
 /* Enter username section*/
 .home-button {
@@ -42,8 +45,11 @@ left: 50%;
 right: 50%;
 align-self: center;
 background-color: rgba(68, 68, 68, 0.5);
-border-radius: 15%;
+border-radius: 10%;
 border: solid 2px rgb(241, 192, 101);
+width: 75%;
+height: 75%;
+font-family: 'Tilt Neon', sans-serif;
 }
 
 
@@ -52,6 +58,7 @@ border: solid 2px rgb(241, 192, 101);
     background-color: #FBFCF8;
     border-radius: 15%;
     border: solid 2px rgb(241, 192, 101);
+    font-family: 'Tilt Neon', sans-serif;
 }
 
 .game-rules-list {
@@ -73,6 +80,7 @@ border: solid 2px rgb(241, 192, 101);
     margin-right: auto;
     border-radius: 15%;
     border: solid 2px rgb(241, 192, 101);
+    font-family: 'Tilt Neon', sans-serif;
 }
 
 .player-button {

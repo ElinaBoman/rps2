@@ -35,13 +35,13 @@ hidePanel(gameRulesSection);
 hidePanel(gameAreaSection);*/
 
 /*document.querySelectorAll("button").forEach((button) => {
-//button.addEventListener("click", () => {
-    //const userChoice = button.id;
-    //const computerChoice = computerChoice();
-    //const result = checkWinner(userChoice, computerChoice);
-    //displayResult(userChoice, computerChoice, result);
-// });
-});*/
+button.addEventListener("click", () => {
+    const userChoice = button.id;
+    const computerChoice = computerChoice();
+    const result = checkWinner(userChoice, computerChoice);
+    displayResult(userChoice, computerChoice, result);
+ });*/
+
 
 // Homebutton
 homeButton.addEventListener("click", function () {
@@ -72,7 +72,7 @@ gameRulesSection.addEventListener("click", function (event) {
  there is going to bo be a messege: You win!.
  If the computer choice isn't either of theese 2, there is a else message: You lose!.*/
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
-document.querySelectorAll("button").forEach((button) => {
+    document.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
         const userChoice = button.id;
         const computerChoice = computerChoose();
