@@ -115,7 +115,7 @@ function displayResult(userChoice, computerChoice, result) {
     resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
     let playerChoiceLowerCase = userChoice.toLowerCase();
     let computerChoiceLowerCase = computerChoice.toLowerCase();
-    playerImage.src = `assets/images/rock.png${playerChoiceLowerCase}.png`;
+    playerImage.src = `assets/images/${playerChoiceLowerCase}.png`;
     computerImage.src = `assets/images/${computerChoiceLowerCase}.png`;
     console.log(playerImage);
     console.log(userChoice);
