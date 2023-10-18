@@ -15,6 +15,7 @@ const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
 const errorElement = document.getElementById("error");
 const enterUserName = document.getElementById("gamer-tag-info");
+const computerScore = document.getElementById("computer-score")
 //Add hide function to section.
 usernameSection.classList.remove("hide");
 gameRulesSection.classList.add("hide");
@@ -54,7 +55,7 @@ form.addEventListener("submit", function (event) {
     if (enterUsername === "") {
         enterUserName.innerText = `Please be creative, insert username!`;
         enterUserName.style.color = "red";
-        enterUserName.style.fontSize = "100%";
+        enterUserName.style.fontSize = "130%";
     } else {
         gameRulesSection.classList.remove("hide");
         usernameSection.classList.add("hide");
@@ -66,10 +67,13 @@ gameRulesSection.addEventListener("click", function (event) {
     gameAreaSection.classList.remove("hide");
 });
 
+
 /* This function is to check who the winner is.
  If user choice is rock and the computer choice is scissors or lizard,
  there is going to bo be a messege: You win!.
  If the computer choice isn't either of theese 2, there is a else message: You lose!.*/
+
+//gameAreaSection.addEventListener("click", function (event){
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 document.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
@@ -79,6 +83,10 @@ document.querySelectorAll("button").forEach((button) => {
         displayResult(userChoice, computerChoice, result);
     });
 });
+
+//document.querySelectorAll("playerButton").forEach((button) => {
+    //button.addEventListener("click", () => {
+//});
 /* This function is for the computer to make a choice.
 From a random index a hole number is going to be choosen.
 Then it's going to be multiplied with 5 scince there are 5 different options.*/
