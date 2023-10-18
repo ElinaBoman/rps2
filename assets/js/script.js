@@ -34,24 +34,14 @@ showPanel(usernameSection);
 hidePanel(gameRulesSection);
 hidePanel(gameAreaSection);*/
 
-/*document.querySelectorAll("button").forEach((button) => {
-//button.addEventListener("click", () => {
-    //const userChoice = button.id;
-    //const computerChoice = computerChoice();
-    //const result = checkWinner(userChoice, computerChoice);
-    //displayResult(userChoice, computerChoice, result);
-// });
-});*/
-
-// Homebutton
+    // Homebutton
 homeButton.addEventListener("click", function () {
     window.location.href = homeUrl;
 });
-// This section will remove the rulearea-section and then show gamearea-section.
+    // This section will remove the rulearea-section and then show gamearea-section.
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     const enterUsername = username.value.trim();
-    //let errorMsg = document.getElementById("error");
     if (enterUsername === "") {
         enterUserName.innerText = `Please be creative, insert username!`;
         enterUserName.style.color = "red";
@@ -67,16 +57,10 @@ gameRulesSection.addEventListener("click", function (event) {
     gameAreaSection.classList.remove("hide");
 });
 
-
-/* This function is to check who the winner is.
- If user choice is rock and the computer choice is scissors or lizard,
- there is going to bo be a messege: You win!.
- If the computer choice isn't either of theese 2, there is a else message: You lose!.*/
-
-//gameAreaSection.addEventListener("click", function (event){
+    /* Winner check function*/
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 document.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("", () => {
         const userChoice = button.id;
         const computerChoice = computerChoose();
         const result = determineWinner(userChoice, computerChoice);
@@ -84,12 +68,7 @@ document.querySelectorAll("button").forEach((button) => {
     });
 });
 
-//document.querySelectorAll("playerButton").forEach((button) => {
-    //button.addEventListener("click", () => {
-//});
-/* This function is for the computer to make a choice.
-From a random index a hole number is going to be choosen.
-Then it's going to be multiplied with 5 scince there are 5 different options.*/
+    /*Computer choice function*/
 function computerChoose() {
     const randomIndex = Math.floor(Math.random() * 5);
     return options[randomIndex];
@@ -116,7 +95,7 @@ function determineWinner(userChoice, computerChoice) {
         return "You lose!";
     }
 }
-//This shows playsers choice and computer choice.
+    //This shows playsers choice and computer choice.
 function displayResult(userChoice, computerChoice, result) {
     const resultElement = document.getElementById("result");
 
