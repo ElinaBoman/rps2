@@ -1,7 +1,6 @@
 // Constant variables
 const form = document.getElementById("login-form");
 const usernameSection = document.getElementById("enter-username-section");
-// const username = document.getElementsByClassName("user-name");
 const username = document.getElementById("username-input");
 const usernameSubmitBtn = document.getElementsByClassName("submit-username-btn");
 const gameRulesSection = document.getElementById("game-rules-section");
@@ -43,9 +42,9 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     const enterUsername = username.value.trim();
     if (enterUsername === "") {
-        enterUserName.innerText = `Please be creative, insert username!`;
-        enterUserName.style.color = "red";
-        enterUserName.style.fontSize = "130%";
+            enterUserName.innerText = `Please be creative, insert username!`;
+            enterUserName.style.color = "red";
+            enterUserName.style.fontSize = "130%";
     } else {
         gameRulesSection.classList.remove("hide");
         usernameSection.classList.add("hide");
@@ -59,15 +58,20 @@ gameRulesSection.addEventListener("click", function (event) {
 
     /* Winner check function*/
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
-document.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("", () => {
-        const userChoice = button.id;
+
+const gameButtons = document.getElementById("player-button").children;
+console.log(gameButtons);
+
+for (button of gameButtons) {
+    console.log(button);
+    console.log(button.id)
+    const userChoice = button.id;
+    button.addEventListener("click", function () {
         const computerChoice = computerChoose();
         const result = determineWinner(userChoice, computerChoice);
-        displayResult(userChoice, computerChoice, result);
-    });
-});
-
+        displayResult(userChoice, computerChoice, result);   
+    })
+}
     /*Computer choice function*/
 function computerChoose() {
     const randomIndex = Math.floor(Math.random() * 5);
