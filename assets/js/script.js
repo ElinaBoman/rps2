@@ -15,7 +15,6 @@ const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
 const errorElement = document.getElementById("error");
 const enterUserName = document.getElementById("gamer-tag-info");
-const gameTag = document.getElementById("player-nametag");
 //Add hide function to section.
 usernameSection.classList.remove("hide");
 gameRulesSection.classList.add("hide");
@@ -35,13 +34,13 @@ hidePanel(gameRulesSection);
 hidePanel(gameAreaSection);*/
 
 /*document.querySelectorAll("button").forEach((button) => {
-button.addEventListener("click", () => {
-    const userChoice = button.id;
-    const computerChoice = computerChoice();
-    const result = checkWinner(userChoice, computerChoice);
-    displayResult(userChoice, computerChoice, result);
- });*/
-
+//button.addEventListener("click", () => {
+    //const userChoice = button.id;
+    //const computerChoice = computerChoice();
+    //const result = checkWinner(userChoice, computerChoice);
+    //displayResult(userChoice, computerChoice, result);
+// });
+});*/
 
 // Homebutton
 homeButton.addEventListener("click", function () {
@@ -72,19 +71,14 @@ gameRulesSection.addEventListener("click", function (event) {
  there is going to bo be a messege: You win!.
  If the computer choice isn't either of theese 2, there is a else message: You lose!.*/
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
-    document.querySelectorAll("button").forEach((button) => {
+document.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
         const userChoice = button.id;
         const computerChoice = computerChoose();
         const result = determineWinner(userChoice, computerChoice);
-        //displayResult(userChoice, computerChoice, result);
+        displayResult(userChoice, computerChoice, result);
     });
 });
-
-function changePlayertag() {
-    gameTag.innerText = `${username.value}`;
-};
-
 /* This function is for the computer to make a choice.
 From a random index a hole number is going to be choosen.
 Then it's going to be multiplied with 5 scince there are 5 different options.*/
@@ -117,8 +111,16 @@ function determineWinner(userChoice, computerChoice) {
 //This shows playsers choice and computer choice.
 function displayResult(userChoice, computerChoice, result) {
     const resultElement = document.getElementById("result");
+
     resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
-}
+    let playerChoiceLowerCase = userChoice.toLowerCase();
+    let computerChoiceLowerCase = computerChoice.toLowerCase();
+    playerImage.src = `assets/images/rock.png${playerChoiceLowerCase}.png`;
+    computerImage.src = `assets/images/${computerChoiceLowerCase}.png`;
+    console.log(playerImage);
+    console.log(userChoice);
+    console.log(computerChoice);
+};
 // Theese are the functions to increment score.
 function incrementScore() {
     let playerScore = parseInt(document.getElementById("player-score").innerText);

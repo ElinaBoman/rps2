@@ -24,14 +24,14 @@
         </div>
         <!--<div id="error"></div>-->
         <form id="login-form" action="javascript:void(0)" onsubmit="">
-            <label for="user-name"></label>
+            <label for="user-name">Enter gamertag!</label>
             <br>
             <input id="username-input" class="user-name" type="text" placeholder="Enter a cool name">
             <button type="submit" class="submit-username-btn">Click me!</button>
         </form>
     </section>
     <section id="game-rules-section" class="txt-align">
-        <h1>Game rules:</h1>
+        <h1>Hello ... Game rules:</h1>
         <div>
             <ul class="game-rules-list">
                 <li>Rock crushes Scissors: Rock defeats Scissors.</li>
@@ -56,18 +56,12 @@
         <div class="score-area">
             <!--Display player score -->
             <div class="player-score">
-                <div class="scores">
-                    <p id="player-nametag">Player:</p>
-                    <span id="player-score">0</span>
-                </div>
+                <p class="scores">Player: <span id="player-score">0</span></p>
                 <img id="player-img" src="assets/images/lizard.png" alt="Rock paper scissor">
             </div>
             <!--Display computer score-->
             <div class="computer">
-                <div class="scores">
-                    <p>Computer:</p>
-                    <span id="computer-score">0</span>
-                </div>
+                <p class="scores">Computer: <span id="computer-score">0</span></p>
                 <img id="computer-img" src="assets/images/lizard.png" alt="Rock paper scissor">
             </div>
         </div>
@@ -76,7 +70,7 @@
                     aria-label="Rock-button"></button>
             <button id="PAPER" data-choice="1"><img src="assets/images/paper.png" alt="Paper-button"
                     class="player-button" aria-label="Paper-button"></button>
-            <button id="SCISSORS" data-choice="2"><img src="assets/images/scissor.png" alt="Scissors-button"
+            <button id="SCISSORS" data-choice="2"><img src="assets/images/scissors.png" alt="Scissors-button"
                     class="player-button" aria-label="Scissors-button"></button>
             <button id="LIZARD" data-choice="3"><img src="assets/images/lizard.png" alt="Lizard-button"
                     class="player-button" aria-label="Lizard-button"></button>
@@ -84,7 +78,7 @@
                     class="player-button" aria-label="Spock-button"></button>
         </div>
         <button id="reset-score">Reset score!</button>
-       <!--<div id="result"></div>-->
+        <div id="result"></div>
     </section>
     <script src="assets/js/script.js"></script>
 </body>
