@@ -119,7 +119,7 @@ body {
 }
 
 /*This are for smaller screen sizes*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     html {
     margin: 0;
     padding: 0;
@@ -167,19 +167,15 @@ body {
     font-size: 60%;
 }
 
-#p {
+.player-score p {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-#player-score > p {
+.computer p {
     padding-top: 0;
     padding-bottom: 0;
-}
 
-#p-scores {
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 #player-img, #computer-img {
@@ -187,11 +183,6 @@ body {
     width: 90px;
     padding-top: 0;
 }
-
-.scores {
-    padding-top: 0;
-    padding-bottom: 0;
- }
 
 .player-score,
 .computer {
