@@ -15,10 +15,13 @@ const resetScore = document.getElementById("reset-score");
 const errorElement = document.getElementById("error");
 const enterUserName = document.getElementById("gamer-tag-info");
 const computerScore = document.getElementById("computer-score")
+
 //Add hide function to section.
 usernameSection.classList.remove("hide");
 gameRulesSection.classList.add("hide");
 gameAreaSection.classList.add("hide");
+
+
 
 /*FÖR ATT GÖRA HIDE FUNKTIONEN ENKLARE.
 function showPanel (panel) {
@@ -33,11 +36,11 @@ showPanel(usernameSection);
 hidePanel(gameRulesSection);
 hidePanel(gameAreaSection);*/
 
-    // Homebutton
+// Homebutton
 homeButton.addEventListener("click", function () {
     window.location.href = homeUrl;
 });
-    // This section will remove the rulearea-section and then show gamearea-section.
+// This section will remove the rulearea-section and then show gamearea-section.
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     const enterUsername = username.value.trim();
@@ -48,7 +51,10 @@ form.addEventListener("submit", function (event) {
     } else {
         gameRulesSection.classList.remove("hide");
         usernameSection.classList.add("hide");
+        let p1 = username.value;
+        document.getElementById("p-scores").innerText = `${p1}`;
     }
+        
 });
 gameRulesSection.addEventListener("click", function (event) {
     event.preventDefault();
@@ -56,7 +62,7 @@ gameRulesSection.addEventListener("click", function (event) {
     gameAreaSection.classList.remove("hide");
 });
 
-    /* Winner check function*/
+/* Winner check function*/
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 
 const gameButtons = document.getElementById("player-button").children;

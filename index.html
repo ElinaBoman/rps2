@@ -22,7 +22,7 @@
         <div class="start-info-text txt-align" id="gamer-tag-info">
             <p>First things first</p>
         </div>
-        <!--<div id="error"></div>-->
+    <!--<div id="error"></div>-->
         <form id="login-form" action="javascript:void(0)" onsubmit="">
             <label for="user-name">Enter gamertag!</label>
             <br>
@@ -31,7 +31,7 @@
         </form>
     </section>
     <section id="game-rules-section" class="txt-align">
-        <h1>Hello ... Game rules:</h1>
+        <h1>Hello <span id="p-scores"></span> Game rules:</h1>
         <div>
             <ul class="game-rules-list">
                 <li>Rock crushes Scissors: Rock defeats Scissors.</li>
@@ -52,15 +52,17 @@
     </section>
     <section id="game-area" class="txt-align">
         <h1>Choose your champion</h1>
-        <!--this div sets text for result and player choice-->
+        <!--Result text-->
         <div id="result"></div>
+         <!--this div sets text for result and player choice-->
         <div class="score-area">
-            <!--Display player score -->
+        <!--Display player score -->
             <div class="player-score">
-                <p class="scores">Player: <span id="player-score">0</span></p>
+               
+                <p id="p-scores">Player: <span id="player-score">:0</span></p>
                 <img id="player-img" src="assets/images/lizard.png" alt="Rock paper scissor">
             </div>
-            <!--Display computer score-->
+        <!--Display computer score-->
             <div class="computer">
                 <p class="scores">Computer: <span id="computer-score">0</span></p>
                 <img id="computer-img" src="assets/images/lizard.png" alt="Rock paper scissor">
