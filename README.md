@@ -1,6 +1,6 @@
 RPSLS
 
-RPSLS is short for rock, paper, scissor, lizard or Spock. This game is a version of the world wide famous game: rock, paper or scissors. The rules are simple, rock beats scissors, scissors cuts paper and paper covers rock (There is more information about the rules inside the game). In this game there are two more options to choose from, theese are lizard and Spock. This makes the game a bit more advanced and a lot more fun. 
+RPSLS is short for rock, paper, scissor, lizard or Spock. This game is a version of the world wide famous game: rock, paper or scissors. The rules are simple, rock beats scissors, scissors cuts paper and paper covers rock (There is more information about the rules inside the game). In this game there are two more options to choose from, theese are lizard and Spock. This makes the game a bit more advanced and a lot more fun.
 
 To use the website, simply navigate to the following URL:
 <!--change this link--->
@@ -9,7 +9,7 @@ To use the website, simply navigate to the following URL:
 Responsive
 
 Design
-The main goal with the design of this website was to make it look fun and inviting. By using Balsamic Wireframe the basic structure of Dog Barkery was created. The pictures in the website that has been used are fun to look at but also clean and colorful. The dotted background was choosen because it had a very nice color palette and the dots matched the over all circle style of the website. A couple of divs along with all pictures were put inside circles. This was done to make the website playful and easy on the eye. Design
+The design of this site is very simple using light colors in the background. This is to not distract the user from the content. To make the site a bit more appeling there are orange borders around the main content. The orange color is matched with the orange details in the game-rules area. 
 
 Features
 Existing Features

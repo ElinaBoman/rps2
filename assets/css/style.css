@@ -19,16 +19,13 @@ html {
 .txt-align {
     text-align: center;
 }
-/*Home-button icon
-.home-button {
-    background-color: #fbfcf8;
-    border: solid 2px darkslategray;
-    border-radius: 50%;
-}*/
 
+.home {
+
+}
 #home-button {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-color: #fbfcf8;
     border: solid 2px darkslategray;
     border-radius: 50%;
@@ -44,11 +41,6 @@ body {
 }
 
 /* Enter username section*/
-#home.button {
-    height: 100px;
-    width: 100px;
-}
-
 #enter-username-section {
     border: 1px solid;
     left: 50%;
@@ -100,6 +92,8 @@ body {
     width: 200px;
     height: 300px;
     border: solid 2px rgb(241, 192, 101);
+    background-color: rgb(233, 200, 139);
+    border-radius: 15%;
 }
 
 /* score area*/
