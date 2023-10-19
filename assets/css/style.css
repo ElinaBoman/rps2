@@ -129,7 +129,8 @@ body {
     body {
     padding: 5px;
     }
-    
+
+    /*Game rules section with media querys*/
     #game-rules-section {
         max-width: wv;
         font-size: 75%;
@@ -144,4 +145,66 @@ body {
         width: 200px;
 
     }
+/*game area section with media querys*/
+/*Game-area section*/
+#game-area {
+    background-color: #fbfcf8;
+    border-radius: 15%;
+    border: solid 2px rgb(241, 192, 101);
+    font-family: "Tilt Neon", sans-serif;
+}
+
+
+#game-area {
+    width: 95%;
+}
+
+.player-button {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 40px;
+    width: 40px;
+
+}
+
+.player-score, .computer {
+    font-size: 60%;
+}
+
+#p {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#player-score > p {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#p-scores {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+#player-img, #computer-img {
+    height: 90px;
+    width: 90px;
+}
+
+.scores {
+    padding-top: 0;
+    padding-bottom: 0;
+ }
+
+.player-score,
+.computer {
+    width: 150px;
+    height: 150px;
+}
+
+#computer-img {
+    size: 60%;
+}
 }
