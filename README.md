@@ -1,4 +1,4 @@
-RPSLS
+# RPSLS
 
 RPSLS is short for rock, paper, scissor, lizard or Spock. This game is a version of the world wide famous game: rock, paper or scissors. The rules are simple, rock beats scissors, scissors cuts paper and paper covers rock (There is more information about the rules inside the game). In this game there are two more options to choose from, theese are lizard and Spock. This makes the game a bit more advanced and a lot more fun.
 
@@ -6,52 +6,46 @@ To use the website, simply navigate to the following URL:
 <!--change this link--->
 <https://elinaboman.github.io/pp1-dogbakery/>
 
-Responsive
+## Responsive
 
-Design
-The design of this site is very simple using light colors in the background. This is to not distract the user from the content. To make the site a bit more appeling there are orange borders around the main content. The orange color is matched with the orange details in the game-rules area. 
+### Design
+The design of this site is very simple using light colors in the background. This is to not distract the user from the content. To make the site a bit more appeling there are orange borders around the main content. The orange color is matched with the orange details in the game-rules area. To create a softer look of the site, the display boxes have a soft border with rounded corners. This is to makes the site playful and easy on the eye.
 
-Features
-Existing Features
-The landing page
-The landing page contains information about what the purpose of Dog Barkery is. It contains images of dogs to immediately create a connection to what the website is about.
-There is a short list called "Spoil your dog" wich displays that there are treats, play and fun activities for dogs. It is a way to show guests that the Dog Barkery is all about dogs. Landing page
-Navigation Bar
-To make it easy for the user of this website to find correct information, there is a navigation bar that displays the Home, About and a Contact. The navigation menu is full responsive and also contains the Dog Barkery logo. There is no need for the user to use the 'back' button since navigation menu allows easy access to all three pages. Navbar
-The Footer
-The footer section contains links to Dog Barkerys social medias (Facebook, Instagram and Youtube). The links open in a new tab to make it easier for the user to control the websites.
-The social medias displays pictures from Dog Barkery and activities to allure people to pay a visit. Footer
-About Us
-The About Us page is where information about schedule and opening times are stored. There is also a brief section about who the owner of Dog Barkery is and why the company was established. This is to create a more personal feeling to the website and to make it more inviting.
+## Features
+### Existing Features
+#### Enter username form
+  Before entering the rule- and game-area the user has to enter a username. The enterd text will later on be displayd in the rule- and game-area. This makes the game interactive with the user. If the user doesn't enter any text in the text box a message will read above the box, asking the user to insert a username. The game will not continue untill a text is enterd.
 
-In the weekly schedule there is information about what kind of activity that are happening during the week including weekdays, time and place. This will attract people who might be interested in trying some new activities. It also sends information about what weekdays are more suitable for puppy's or senior dogs.
+  There is a homebutton up in the left corner for the user to get back to the enter-username area at any time.
 
-Opening times displays when Dog Barkery is open. About page Schedule
+#### Rule-area
+  When the user has choosen a username and clicked the button the rule-area appears. In the rule-area the game rules are explained to the user. The text is combined with a picture that also displays the same rules. This is to make the rules easy to understand as it's easy to get a bit confused by the rules. When the user is ready there is a button that reads: Let's go! When the user clicks this button or anywhere else on the page, the game-area opens. 
 
-Contact
-This page let's the user know how to contact Dog Barkery. If the user doesn't want to contact via social medias there is a contact form that is easy to use and will let the user know what kind of inputs are needed. The inputs have a hover function to make it easy for the user to click inside the boxes. The submit button has been enlarged to make it more accessible. The user needs to enter first name, last name and email. In the bottom of the page there is a map to Dog Bakerys location. Contact form Map
-Features Left to Implement
-Have recipes of different dog treats that are suitable for people to make at home.
+ #### Game-area
+The game-area exist of two closed squeres that displays the user and the computer choices. The result from each round will be displayed above the boxes with both user and computer choices. The same text will also read the outcome of the game. The winner will score one point from each winning round. Theese point are then displayed inside the player-boxes. The game finishes after ten rounds and the result is displayed. If the user would like to continiue playing there is a reset box that resets the scores. The fun can last forever! 
 
-Have a fourth page with a gallary. Showing pictures from weekly activities at Dog Barkery.
+## Features Left to Implement
+There are some features left to implement in this game. There will be a return button next to the home button so the user allways can revisit the rule-area.
 
-Technologies used
+## Technologies used
 HTML
 CSS
+JavaScript
 Github
 Codeanywhere
 W3C:s CSS-validator
 WRC:s HTML validator
 Lighthouse
 Balsamiq Wireframes
-Testing
+
+## Testing
 The website has been tested with Google DevTools. Different screen sizes has been tested to work on all devices. Functions of navbar has been adjusted to act as a toggle-bar on smaller devices, while on big screens it appers in the header to the right.
 
 The testing with Google DevTools has helped to localise problems with responsiveness. To solve these problems, media queries has been used for devices with (min-width: 768px) and (min-width: 900px).
 
 There are some estetic malfunctions with the toggle-bar. On smaller screens, when the toggle-menu is clicked, the menu takes up to much space on the left side. This issue will be fixed with adding some padding on the left side. The malfunction is under process.
 
-Validator Testing
+## Validator Testing
 HTML
 
 No errors were returned when passing through the official W3C validator. Validation HTML
@@ -62,7 +56,7 @@ Lighthouse testing
 
 Lighthouse testing
 
-Unfixed Bugs
+## Unfixed Bugs
 Footer buttons
 Description: There has been some issues with placement of the footer icons with the links to Facebook, Instagram and Youtube. The placement is intended to spread out evenly, but the icons stick together at the moment.
 Status: The issue is under investigation.
@@ -77,32 +71,20 @@ This website has been deployed to Github pages. The deployment process starts at
 Credits
 Content
 
-The Favicons in the header and footer menu comes from the website Font Awesome.
-Instructions on how to add hover function has been taken from the website W3 Schools.
-Instructions on how to add a picture into a circle shape comes from The love Running project at Code Institute.
-Information on how to built a website has been learned with Love Running project at the Code Institute.
-Fonts have been imported from Google fonts.
-The construction of README file where inspired by the user Apollon999 from Githubs README for Tiny-Travelers. The construction of the README file where also based on the Code Institutes Love Running projects README.
-Media Images
+  - Font Awsome:
+  The favicon of a little house in the upper left corner has been taken from from the site Font Awesome.
 
-Pexels
+- ChatGPT:
+Instructions on how play the games in the rule-area has been written together with ChatGPT. ChatGPT also helped creating the code to make computer decision random. This information has then been adjusted to fit this game. ChatGPT also helped creating the checkWinner function, creating suggestions for how to check the winner.
+During code malfunctions ChatGPT has helped trying to find different reasons to why code malfunctioned.
 
-bulldog-sitting-wooden-table
-dog with lollipop
-french bulldog
-peeking dog
-two dogs with party hat
-Istock Photo
+- W3Schools:
+The site was used to find information about Javascript in generel. Mostly to find information about for loops, if, else if and else statements.
 
-white dog with cupcake
-Google Photo:
-
-The dotted background can be found with this link: <https://images.app.goo.gl/eT2BWZFSF6MCSRWF6>.
-Extra credits
+- Slack comunity:
+  Big credits to the slack comunity espesially to Craig Hudson and Niclas Hugdahl who really took their time to help with bugs in the code.
 
 Code Institute tutorials
 Mentor Brian O'Hare
-Slack channels along with my peers and their discussions and analysis
 My friend Annika Davies
-W3 Schools
 Google search
