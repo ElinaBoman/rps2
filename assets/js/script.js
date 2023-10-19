@@ -53,7 +53,7 @@ gameRulesSection.addEventListener("click", function (event) {
     gameAreaSection.classList.remove("hide");
 });
 let userTries = [0];
-let maxTries = [10];
+let maxTries = [11];
 /* Winner check function*/
 for (button of gameButtons) {
     const userChoice = button.id;

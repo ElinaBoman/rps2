@@ -12,8 +12,26 @@ html {
     box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
+
 .txt-align {
     text-align: center;
+}
+/*Home-button icon
+.home-button {
+    background-color: #fbfcf8;
+    border: solid 2px darkslategray;
+    border-radius: 50%;
+}*/
+
+#home-button {
+    width: 40px;
+    height: 40px;
+    background-color: #fbfcf8;
+    border: solid 2px darkslategray;
+    border-radius: 50%;
 }
 
 body {
@@ -26,11 +44,6 @@ body {
 }
 
 /* Enter username section*/
-.home-button {
-    border: solid 2px darkslategray;
-    border-radius: 50%;
-}
-
 #home.button {
     height: 100px;
     width: 100px;
@@ -107,19 +120,7 @@ body {
     width: 100px;
 }
 
-.hide {
-    display: none;
-}
-
-.home-button {
-    background-color: #fbfcf8;
-}
-
-#home-button {
-    width: 40px;
-    height: 40px;
-}
-
+/*This are for smaller screen sizes*/
 @media screen and (max-width: 600px) {
     html {
     margin: 0;
@@ -130,30 +131,27 @@ body {
     padding: 5px;
     }
 
-    /*Game rules section with media querys*/
+/*Game rules section with media querys*/
     #game-rules-section {
         max-width: wv;
         font-size: 75%;
         margin: 0px;
         padding: 5px;
         align-items: center;
-        
     }
 
     .game-rules-img {
         height: 200px;
         width: 200px;
-
     }
-/*game area section with media querys*/
-/*Game-area section*/
+
+/*Game area section with media querys*/
 #game-area {
     background-color: #fbfcf8;
     border-radius: 15%;
     border: solid 2px rgb(241, 192, 101);
     font-family: "Tilt Neon", sans-serif;
 }
-
 
 #game-area {
     width: 100%;
@@ -165,7 +163,6 @@ body {
     flex-direction: row;
     height: 40px;
     width: 40px;
-
 }
 
 .player-score, .computer {
@@ -187,7 +184,6 @@ body {
     padding-bottom: 0;
 }
 
-
 #player-img, #computer-img {
     height: 90px;
     width: 90px;
@@ -204,6 +200,4 @@ body {
     width: 200px;
     height: 230px;
 }
-
-
 }
