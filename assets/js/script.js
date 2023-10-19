@@ -14,27 +14,17 @@ const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
 const errorElement = document.getElementById("error");
 const enterUserName = document.getElementById("gamer-tag-info");
-const computerScore = document.getElementById("computer-score")
+const computerScore = document.getElementById("computer-score");
+const gameButtons = document.getElementById("player-button").children;
+const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
+
+
+
 
 //Add hide function to section.
 usernameSection.classList.remove("hide");
 gameRulesSection.classList.add("hide");
 gameAreaSection.classList.add("hide");
-
-
-
-/*FÖR ATT GÖRA HIDE FUNKTIONEN ENKLARE.
-function showPanel (panel) {
-    panel.classList.remove("show");
-}
-function hidePanel (panel) {
-    panel.classList.remove("hide")
-}
-*/
-/*
-showPanel(usernameSection);
-hidePanel(gameRulesSection);
-hidePanel(gameAreaSection);*/
 
 // Homebutton
 homeButton.addEventListener("click", function () {
@@ -45,9 +35,9 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     const enterUsername = username.value.trim();
     if (enterUsername === "") {
-            enterUserName.innerText = `Please be creative, insert username!`;
-            enterUserName.style.color = "red";
-            enterUserName.style.fontSize = "130%";
+        enterUserName.innerText = `Please be creative, insert username!`;
+        enterUserName.style.color = "red";
+        enterUserName.style.fontSize = "130%";
     } else {
         gameRulesSection.classList.remove("hide");
         usernameSection.classList.add("hide");
@@ -55,31 +45,39 @@ form.addEventListener("submit", function (event) {
         document.getElementById("p-scores").innerText = `${p1}:`;
         document.getElementById("welcome-name").innerText = `Hello ${p1}!`;
     }
-        
+
 });
 gameRulesSection.addEventListener("click", function (event) {
     event.preventDefault();
     gameRulesSection.classList.add("hide");
     gameAreaSection.classList.remove("hide");
 });
-
+let userTries = [0];
+let maxTries = [5];
 /* Winner check function*/
-const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
-
-const gameButtons = document.getElementById("player-button").children;
-console.log(gameButtons);
-
 for (button of gameButtons) {
-    console.log(button);
-    console.log(button.id)
     const userChoice = button.id;
     button.addEventListener("click", function () {
-        const computerChoice = computerChoose();
-        const result = determineWinner(userChoice, computerChoice);
-        displayResult(userChoice, computerChoice, result);   
-    })
-}
-    /*Computer choice function*/
+        userTries++;
+        if (userTries < maxTries) {
+            const computerChoice = computerChoose();
+            const result = determineWinner(userChoice, computerChoice);
+            displayResult(userChoice, computerChoice, result);
+        } else if
+            (incrementScore > incrementWrongAnswer) {
+            alert(`You WIN!`);
+            userTries = [0];
+        } else if (incrementScore === incrementWrongAnswer) {
+            alert(`It's a tie!`);
+            userTries = [0];
+        } else {
+            alert(`You Lose!`);
+            userTries = [0];
+        }
+    });
+
+};
+/*Computer choice function created with ChatGPT */
 function computerChoose() {
     const randomIndex = Math.floor(Math.random() * 5);
     return options[randomIndex];
@@ -106,7 +104,7 @@ function determineWinner(userChoice, computerChoice) {
         return "You lose!";
     }
 }
-    //This shows playsers choice and computer choice.
+//This shows playsers choice and computer choice.
 function displayResult(userChoice, computerChoice, result) {
     const resultElement = document.getElementById("result");
 

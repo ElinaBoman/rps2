@@ -1,3 +1,20 @@
 länkar till bilder
 https://www.vecteezy.com/vector-art/627703-home-icon-symbol-sign
 PNG EGG
+
+
+for (button of gameButtons) {
+    console.log(button);
+    console.log(button.id)
+    const userChoice = button.id;
+    button.addEventListener("click", function () {
+        userTries++;
+        if(userTries < maxTries){
+            const computerChoice = computerChoose();
+            const result = determineWinner(userChoice, computerChoice);
+            displayResult(userChoice, computerChoice, result);
+        }else {
+            // show message...
+        }
+    })
+}
