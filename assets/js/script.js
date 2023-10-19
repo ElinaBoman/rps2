@@ -18,19 +18,31 @@ const computerScore = document.getElementById("computer-score");
 const gameButtons = document.getElementById("player-button").children;
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 
+//Event Listeners
+gameRulesSection.addEventListener("click", function (event) {
+    event.preventDefault();
+    gameRulesSection.classList.add("hide");
+    gameAreaSection.classList.remove("hide");
+});
 
+//This will reset the score when the button: reset score, is clicked.
+resetScore.addEventListener("click", () => {
+    document.getElementById("player-score").innerText = "0";
+    document.getElementById("computer-score").innerText = "0";
+});
 
+// Homebutton
+homeButton.addEventListener("click", function () {
+    window.location.href = homeUrl;
+});
 
 //Add hide function to section.
 usernameSection.classList.remove("hide");
 gameRulesSection.classList.add("hide");
 gameAreaSection.classList.add("hide");
 
-// Homebutton
-homeButton.addEventListener("click", function () {
-    window.location.href = homeUrl;
-});
-// This section will remove the rulearea-section and then show gamearea-section.
+
+// This section will remove the rule-area and then show game-area.
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     const enterUsername = username.value.trim();
@@ -45,13 +57,8 @@ form.addEventListener("submit", function (event) {
         document.getElementById("p-scores").innerText = `${p1}:`;
         document.getElementById("welcome-name").innerText = `Hello ${p1}!`;
     }
+});
 
-});
-gameRulesSection.addEventListener("click", function (event) {
-    event.preventDefault();
-    gameRulesSection.classList.add("hide");
-    gameAreaSection.classList.remove("hide");
-});
 let userTries = [0];
 let maxTries = [11];
 /* Winner check function*/
@@ -66,6 +73,9 @@ for (button of gameButtons) {
         } else {
             window.alert(`Game over! Check result! If you want to play again, hit the reset button!`)
             userTries = [0]
+           //if (result = incrementScore [parseInt] > incrementWrongAnswer [parseInt]) {
+               // aler(`you Win!`);
+           //}
         }
         })};
 
@@ -74,6 +84,7 @@ function computerChoose() {
     const randomIndex = Math.floor(Math.random() * 5);
     return options[randomIndex];
 }
+
 function determineWinner(userChoice, computerChoice) {
     let isCorrect = (
         (userChoice === "ROCK" && (computerChoice === "SCISSORS" || computerChoice === "LIZARD")) ||
@@ -100,22 +111,22 @@ function determineWinner(userChoice, computerChoice) {
 function displayResult(userChoice, computerChoice, result) {
     const resultElement = document.getElementById("result");
 
+// This will change the text in the game and show result and what buttons where pressed.
     resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
     let playerChoiceLowerCase = userChoice.toLowerCase();
     let computerChoiceLowerCase = computerChoice.toLowerCase();
     playerImage.src = `assets/images/${playerChoiceLowerCase}.png`;
     computerImage.src = `assets/images/${computerChoiceLowerCase}.png`;
 };
-// Theese are the functions to increment score.
+
+// This function increment score.
 function incrementScore() {
     let playerScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++playerScore;
 }
+
+//This function increments computers score, every time the computer wins.
 function incrementWrongAnswer() {
     let computerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++computerScore;
 }
-resetScore.addEventListener("click", () => {
-    document.getElementById("player-score").innerText = "0";
-    document.getElementById("computer-score").innerText = "0";
-});
