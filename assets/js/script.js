@@ -52,7 +52,8 @@ form.addEventListener("submit", function (event) {
         gameRulesSection.classList.remove("hide");
         usernameSection.classList.add("hide");
         let p1 = username.value;
-        document.getElementById("p-scores").innerText = `${p1}`;
+        document.getElementById("p-scores").innerText = `${p1}:`;
+        document.getElementById("welcome-name").innerText = `Hello ${p1}!`;
     }
         
 });

@@ -89,7 +89,7 @@ body {
 
 .player-score, .computer {
     width: 200px;
-    height: 200px;
+    height: 250px;
     border: solid 2px rgb(241, 192, 101);
 }
 
