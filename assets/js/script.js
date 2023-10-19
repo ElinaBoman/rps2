@@ -53,7 +53,7 @@ gameRulesSection.addEventListener("click", function (event) {
     gameAreaSection.classList.remove("hide");
 });
 let userTries = [0];
-let maxTries = [5];
+let maxTries = [10];
 /* Winner check function*/
 for (button of gameButtons) {
     const userChoice = button.id;
@@ -64,7 +64,7 @@ for (button of gameButtons) {
             const result = determineWinner(userChoice, computerChoice);
             displayResult(userChoice, computerChoice, result);
         } else if
-            (incrementScore > incrementWrongAnswer) {
+            (userChoise > computerChoice) {
             alert(`You WIN!`);
             userTries = [0];
         } else if (incrementScore === incrementWrongAnswer) {
@@ -113,9 +113,6 @@ function displayResult(userChoice, computerChoice, result) {
     let computerChoiceLowerCase = computerChoice.toLowerCase();
     playerImage.src = `assets/images/${playerChoiceLowerCase}.png`;
     computerImage.src = `assets/images/${computerChoiceLowerCase}.png`;
-    console.log(playerImage);
-    console.log(userChoice);
-    console.log(computerChoice);
 };
 // Theese are the functions to increment score.
 function incrementScore() {

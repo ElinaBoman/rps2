@@ -1,9 +1,8 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 
 html {
-    background-color: #FBFCF8;
+    background-color: #fbfcf8;
     align-items: center;
 }
 
@@ -13,18 +12,19 @@ html {
     box-sizing: border-box;
 }
 
-.txt-align { 
+.txt-align {
     text-align: center;
 }
 
 body {
-    background-color: #FFFF;
+    background-color: #ffff;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 50px;
     border-radius: 5%;
-} 
+}
+
 /* Enter username section*/
 .home-button {
     border: solid 2px darkslategray;
@@ -37,30 +37,27 @@ body {
 }
 
 #enter-username-section {
-    border: 1px solid ;
+    border: 1px solid;
     left: 50%;
     right: 50%;
     align-self: center;
     background-color: rgba(68, 68, 68, 0.5);
     border-radius: 10%;
     border: solid 2px rgb(241, 192, 101);
-    font-family: 'Tilt Neon', sans-serif;
-
+    font-family: "Tilt Neon", sans-serif;
 }
-
 
 /*Game-rules section*/
 #game-rules-section {
-    background-color: #FBFCF8;
+    background-color: #fbfcf8;
     border-radius: 15%;
     border: solid 2px rgb(241, 192, 101);
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: "Tilt Neon", sans-serif;
 }
 
 .game-rules-list {
     line-height: 1px;
     list-style-type: none;
-
 }
 
 .game-rules-img {
@@ -70,13 +67,13 @@ body {
 
 /*Game-area section*/
 #game-area {
-    background-color: #FBFCF8;
+    background-color: #fbfcf8;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15%;
     border: solid 2px rgb(241, 192, 101);
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: "Tilt Neon", sans-serif;
 }
 
 .player-button {
@@ -84,10 +81,10 @@ body {
     width: 100px;
     border: solid 2px darkslategray;
     border-radius: 50%;
-    
 }
 
-.player-score, .computer {
+.player-score,
+.computer {
     width: 200px;
     height: 300px;
     border: solid 2px rgb(241, 192, 101);
@@ -116,7 +113,7 @@ body {
 }
 
 .home-button {
-    background-color: #FBFCF8;
+    background-color: #fbfcf8;
 }
 
 #home-button {
@@ -124,3 +121,30 @@ body {
     height: 40px;
 }
 
+@media screen and (min-width: 375px) {
+    html {
+
+    }
+    
+    body {
+    padding: 5px;
+    }
+    
+    #game-rules-section {
+        max-width: 400px;
+        font-size: 75%;
+        margin: 0px;
+        padding: 5px;
+        background-color: rgb(91, 82, 137);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .game-rules-img {
+        height: 200px;
+        width: 200px;
+
+    }
+}
