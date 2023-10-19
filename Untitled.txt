@@ -18,3 +18,15 @@ for (button of gameButtons) {
         }
     })
 }
+
+
+
+            (userChoise > computerChoice) {
+            alert(`You WIN!`);
+            userTries = [0];
+        } else if (incrementScore === incrementWrongAnswer) {
+            alert(`It's a tie!`);
+            userTries = [0];
+        } else {
+            alert(`You Lose!`);
+            userTries = [0];

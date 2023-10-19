@@ -63,20 +63,12 @@ for (button of gameButtons) {
             const computerChoice = computerChoose();
             const result = determineWinner(userChoice, computerChoice);
             displayResult(userChoice, computerChoice, result);
-        } else if
-            (userChoise > computerChoice) {
-            alert(`You WIN!`);
-            userTries = [0];
-        } else if (incrementScore === incrementWrongAnswer) {
-            alert(`It's a tie!`);
-            userTries = [0];
         } else {
-            alert(`You Lose!`);
-            userTries = [0];
+            window.alert(`Game over! Check result! If you want to play again, hit the reset button!`)
+            userTries = [0]
         }
-    });
+        })};
 
-};
 /*Computer choice function created with ChatGPT */
 function computerChoose() {
     const randomIndex = Math.floor(Math.random() * 5);
