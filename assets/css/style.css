@@ -52,6 +52,10 @@ body {
     font-family: "Tilt Neon", sans-serif;
 }
 
+#enter-username-section p, h1 {
+    font-size: 150%;
+}
+
 /*Game-rules section*/
 #game-rules-section {
     background-color: #fbfcf8;
