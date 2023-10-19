@@ -56,8 +56,7 @@ body {
 }
 
 .game-rules-list {
-    line-height: 1px;
-    list-style-type: none;
+    line-height: 200%;   
 }
 
 .game-rules-img {
@@ -121,9 +120,10 @@ body {
     height: 40px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 600px) {
     html {
-
+    margin: 0;
+    padding: 0;
     }
     
     body {
@@ -131,15 +131,12 @@ body {
     }
     
     #game-rules-section {
-        max-width: 400px;
+        max-width: wv;
         font-size: 75%;
         margin: 0px;
         padding: 5px;
-        background-color: rgb(91, 82, 137);
         align-items: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        
     }
 
     .game-rules-img {
