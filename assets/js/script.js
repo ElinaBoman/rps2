@@ -2,25 +2,21 @@
 const form = document.getElementById("login-form");
 const usernameSection = document.getElementById("enter-username-section");
 const username = document.getElementById("username-input");
-const usernameSubmitBtn = document.getElementsByClassName("submit-username-btn");
 const gameRulesSection = document.getElementById("game-rules-section");
 const gameAreaSection = document.getElementById("game-area");
-const playerButton = document.getElementById("playerButton");
-const startGame = document.getElementsByClassName("game-rules-btn");
 const playerImage = document.getElementById("player-img");
 const computerImage = document.getElementById("computer-img");
 const homeUrl = 'https://8000-elinaboman-rps2-2udw505m6g.us2.codeanyapp.com/';
 const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
-const errorElement = document.getElementById("error");
 const enterUserName = document.getElementById("gamer-tag-info");
-const computerScore = document.getElementById("computer-score");
 const gameButtons = document.getElementById("player-button").children;
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 
 //Event Listeners
 gameRulesSection.addEventListener("click", function (event) {
     event.preventDefault();
+   
     gameRulesSection.classList.add("hide");
     gameAreaSection.classList.remove("hide");
 });
@@ -80,7 +76,7 @@ let maxTries = 11;
  * If userTries is less then maxTries the if code block will run. 
  * If UserTries = maxTries the else code block will run and alert the user to check score and reset game.
  */
-for (button of gameButtons) {
+for ( var button of gameButtons) {
     const userChoice = button.id;
     button.addEventListener("click", function () {
         userTries++;
@@ -89,10 +85,11 @@ for (button of gameButtons) {
             const result = determineWinner(userChoice, computerChoice);
             displayResult(userChoice, computerChoice, result);
         } else {
-            window.alert(`Game over! Check result! If you want to play again, hit the reset button!`)
+            window.alert(`Game over! Check result! If you want to play again, hit the reset button!`);
             userTries = 0;
         }
-        })};
+        });
+    }
 
 /**
  * Computer choice function created with ChatGPT
@@ -143,7 +140,7 @@ function displayResult(userChoice, computerChoice, result) {
         let computerChoiceLowerCase = computerChoice.toLowerCase();
         playerImage.src = `assets/images/${playerChoiceLowerCase}.png`;
         computerImage.src = `assets/images/${computerChoiceLowerCase}.png`;
-};
+}
 
 /**
  * This function increment score.

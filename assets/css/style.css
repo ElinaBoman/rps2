@@ -129,7 +129,6 @@ body {
 
 /*Game rules section with media querys*/
     #game-rules-section {
-        max-width: wv;
         font-size: 75%;
         margin: 0px;
         padding: 5px;

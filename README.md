@@ -23,37 +23,22 @@ The design of this site is very simple using light colors in the background. Thi
 #### Rules-area
   When the user has choosen a username and clicked the button the rule-area appears. In the rule-area the game rules are explained to the user. The text is combined with a picture that also displays the same rules. This is to make the rules easy to understand as it's easy to get a bit confused by the rules. When the user is ready there is a button that reads: Let's go! When the user clicks this button or anywhere else on the page, the game-area opens. 
 
-![Rules](rules.png)![Img-rules](ruleimg.png)
+![Rules](rules.png)! [Img-rules](rulesimg.png)
 
  #### Game-area
 The game-area exist of two closed squeres that displays the user and the computer choices. The result from each round will be displayed above the boxes with both user and computer choices. The same text will also read the outcome of the game. The winner will score one point from each winning round. Theese point are then displayed inside the player-boxes. The game finishes after ten rounds and the result is displayed. If the user would like to continiue playing there is a reset box that resets the scores. The fun can last forever! 
 
-![Responsive](responsive.png)
+![Game](gamearea.png)
 
 ## Features Left to Implement
-There are some features left to implement in this game. There will be a return button next to the home button so the user allways can revisit the rule-area.
+There are some features left to implement in this game. 
+* There will be a return button next to the home button so the user allways can revisit the rule-area once inside the game.
+* The winner of each round will hava a winner declaration inside the game-area instead of a window.alert.
+* Give the game more colors in the background with pictures of the rock and paper images to make it more appiling and playful.
+* Add audio to buttons inside game and mute function. 
 
 
 ## Technologies used
-HTML
-CSS
-JavaScript
-Github
-Codeanywhere
-W3C:s CSS-validator
-WRC:s HTML validator
-Lighthouse
-Balsamiq Wireframes
-
-## Testing
-The website has been tested with Google DevTools. Different screen sizes has been tested to work on all devices. Functions of navbar has been adjusted to act as a toggle-bar on smaller devices, while on big screens it appers in the header to the right.
-
-The testing with Google DevTools has helped to localise problems with responsiveness. To solve these problems, media queries has been used for devices with (min-width: 768px) and (min-width: 900px).
-
-There are some estetic malfunctions with the toggle-bar. On smaller screens, when the toggle-menu is clicked, the menu takes up to much space on the left side. This issue will be fixed with adding some padding on the left side. The malfunction is under process.
-
-## Technologies used
-
 - HTML
 - CSS
 - JavaScript
@@ -67,18 +52,29 @@ There are some estetic malfunctions with the toggle-bar. On smaller screens, whe
 - Google devTools
 - Google photos
 
+## Testing
+The website has been tested with Google DevTools. Different screen sizes has been tested to work on all devices. Functions of navbar has been adjusted to act as a toggle-bar on smaller devices, while on big screens it appers in the header to the right.
+
+The testing with Google DevTools has helped to localise problems with responsiveness. To solve these problems, media queries has been used for devices with (min-width: 768px) and (min-width: 900px).
+
+There are some estetic malfunctions with the toggle-bar. On smaller screens, when the toggle-menu is clicked, the menu takes up to much space on the left side. This issue will be fixed with adding some padding on the left side. The malfunction is under process.
+
 
 
 ## Validator Testing
-HTML
+- HTML
+https://validator.w3.org/nu/#textarea
 
 No errors were returned when passing through the official W3C validator. Validation HTML
-CSS
 
-No errors were found when passing through the official (Jigsaw) validator. Validation CSS!
+- CSS
+<https://jigsaw.w3.org/css-validator/validator>
+
+No errors were found when passing through the official (Jigsaw) validator.
 Lighthouse testing
 
-Lighthouse testing
+- Lighthouse testing
+- 
 
 ## Unfixed Bugs
 Footer buttons
