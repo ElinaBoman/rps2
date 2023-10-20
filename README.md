@@ -73,8 +73,12 @@ No errors were returned when passing through the official W3C validator. Validat
 No errors were found when passing through the official (Jigsaw) validator.
 Lighthouse testing
 
+-JavaScript 
+https://jshint.com/
+
+
 - Lighthouse testing
-- 
+  
 
 ## Unfixed Bugs
 Footer buttons

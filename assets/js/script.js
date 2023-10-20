@@ -16,7 +16,6 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 //Event Listeners
 gameRulesSection.addEventListener("click", function (event) {
     event.preventDefault();
-   
     gameRulesSection.classList.add("hide");
     gameAreaSection.classList.remove("hide");
 });
@@ -88,8 +87,8 @@ for ( var button of gameButtons) {
             window.alert(`Game over! Check result! If you want to play again, hit the reset button!`);
             userTries = 0;
         }
-        });
-    }
+    });
+}
 
 /**
  * Computer choice function created with ChatGPT
@@ -134,12 +133,12 @@ function determineWinner(userChoice, computerChoice) {
  * @param computerImage will set the background in the computer div.
 */
 function displayResult(userChoice, computerChoice, result) {
-        const resultElement = document.getElementById("result");
-        resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
-        //let playerChoiceLowerCase = userChoice.toLowerCase();
-        let computerChoiceLowerCase = computerChoice.toLowerCase();
-        playerImage.src = `assets/images/${playerChoiceLowerCase}.png`;
-        computerImage.src = `assets/images/${computerChoiceLowerCase}.png`;
+    const resultElement = document.getElementById("result");
+    resultElement.innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}.<br>${result}`;
+    let playerChoiceLowerCase = userChoice.toLowerCase();
+    let computerChoiceLowerCase = computerChoice.toLowerCase();
+    playerImage.src = `assets/images/${playerChoiceLowerCase}.png`;
+    computerImage.src = `assets/images/${computerChoiceLowerCase}.png`;
 }
 
 /**
