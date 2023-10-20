@@ -6,7 +6,7 @@ To use the website, simply navigate to the following URL:
 <!--change this link--->
 <https://elinaboman.github.io/pp1-dogbakery/>
 
-![Responsive](docs./responsive.png)
+![Responsive](responsive.png)
 
 ## Responsive
 
