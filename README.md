@@ -1,4 +1,4 @@
-# RPSLS
+# RPSLS hej
 
 RPSLS is short for rock, paper, scissor, lizard or Spock. This game is a version of the world wide famous game: rock, paper or scissors. The rules are simple, rock beats scissors, scissors cuts paper and paper covers rock (There is more information about the rules inside the game). In this game there are two more options to choose from, theese are lizard and Spock. This makes the game a bit more advanced and a lot more fun. This game is for everyone who would like to kill some time and have a relaxing moment. Because this game is played against the computer the user can play as many times as he/she likes. 
 
@@ -6,7 +6,7 @@ To use the website, simply navigate to the following URL:
 <!--change this link--->
 <https://elinaboman.github.io/pp1-dogbakery/>
 
-![AmIresponsive](docs./responsive.png)
+![Responsive](docs./responsive.png)
 
 ## Responsive
 
