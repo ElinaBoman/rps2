@@ -6,7 +6,7 @@ To use the website, simply navigate to the following URL:
 <!--change this link--->
 <https://elinaboman.github.io/pp1-dogbakery/>
 
-![Responsive](responsive.png)
+![Responsive](/docs./responsive.png)
 
 ## Design
 The design of this site is very simple using light colors in the background. This is to not distract the user from the content. To make the site a bit more appeling there are orange borders around the main content. The orange color is matched with the orange details in the game-rules area. To create a softer look of the site, the display boxes have a soft border with rounded corners. This is to makes the site playful and easy on the eye.
@@ -18,17 +18,20 @@ The design of this site is very simple using light colors in the background. Thi
 
   There is a homebutton up in the left corner for the user to get back to the enter-username area at any time.
 
-    ![Login Form](loginform.png)
+![Login-form](/docs./loginform.png)
 
 #### Rules-area
   When the user has choosen a username and clicked the button the rule-area appears. In the rule-area the game rules are explained to the user. The text is combined with a picture that also displays the same rules. This is to make the rules easy to understand as it's easy to get a bit confused by the rules. When the user is ready there is a button that reads: Let's go! When the user clicks this button or anywhere else on the page, the game-area opens. 
 
-![Rules](rules.png)! [Img-rules](rulesimg.png)
+![Rules](/docs./rules.png) 
+
+------------![Rules](/docs./rulesimg.png)
+
 
  #### Game-area
 The game-area exist of two closed squeres that displays the user and the computer choices. The result from each round will be displayed above the boxes with both user and computer choices. The same text will also read the outcome of the game. The winner will score one point from each winning round. Theese point are then displayed inside the player-boxes. The game finishes after ten rounds and the result is displayed. If the user would like to continiue playing there is a reset box that resets the scores. The fun can last forever! 
 
-![Game](gamearea.png)
+![Game](/docs./gamearea.png)
 
 ## Features Left to Implement
 There are some features left to implement in this game. 
@@ -66,19 +69,24 @@ There are some estetic malfunctions with the toggle-bar. On smaller screens, whe
 https://validator.w3.org/nu/#textarea
 
 No errors were returned when passing through the official W3C validator. Validation HTML
+![html validation](.png)
+
 
 - CSS
 <https://jigsaw.w3.org/css-validator/validator>
 
 No errors were found when passing through the official (Jigsaw) validator.
 Lighthouse testing
+![Game](gamearea.png)
 
 -JavaScript 
 https://jshint.com/
 
+![JavaScript testing](/docs./javascript-validation-before.png)
+![JavaScript testing](/docs./javascript-validation-after.png)
 
 - Lighthouse testing
-  
+![Lighthouse](/docs./lighthouse-testing.png)
 
 ## Unfixed Bugs
 Footer buttons
