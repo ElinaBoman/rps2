@@ -12,29 +12,30 @@ To use the website, simply navigate to the following URL:
 ## Design
 The design of this site is very simple using light colors in the background. This is to not distract the user from the content. To make the site a bit more appeling there are orange borders around the main content. The orange color is matched with the orange details in the game-rules area. To create a softer look of the site, the display boxes have a soft border with rounded corners. This is to makes the site playful and easy on the eye. The over all design was planed with web tool Balsamiq. This to plan how the game would look in bigger and smaller devices.
 
-![Balsamiq](/docs./balsaimq.png.png)
+![Balsamiq](/docs./balsaimq.png)
 
 ## Features
 ### Existing Features
 #### Enter username form
   Before entering the rule- and game-area the user has to enter a username. The enterd text will later on be displayd in the rule- and game-area. This makes the game interactive with the user. If the user doesn't enter any text in the text box a message will read above the box, asking the user to insert a username. The game will not continue untill a text is enterd.
 
-  There is a homebutton up in the left corner for the user to get back to the enter-username area at any time.
-
+There is a homebutton up in the left corner for the user to get back to the enter-username area at any time.
 ![Login-form](/docs./loginform.png)
+![alert message](/docs./errormsg.png)
 
 #### Rules-area
   When the user has choosen a username and clicked the button the rule-area appears. In the rule-area the game rules are explained to the user. The text is combined with a picture that also displays the same rules. This is to make the rules easy to understand as it's easy to get a bit confused by the rules. When the user is ready there is a button that reads: Let's go! When the user clicks this button or anywhere else on the page, the game-area opens. 
-<div aligne="center">
+
 ![Rules](/docs./rules.png) 
 ![Rules](/docs./rulesimg.png)
-</div>
+
 
 
  #### Game-area
 The game-area exist of two closed squeres that displays the user and the computer choices. The result from each round will be displayed above the boxes with both user and computer choices. The same text will also read the outcome of the game. The winner will score one point from each winning round. Theese point are then displayed inside the player-boxes. The game finishes after ten rounds and the result is displayed. If the user would like to continiue playing there is a reset box that resets the scores. The fun can last forever! 
 
 ![Game](/docs./gamearea.png)
+![Game](/docs./alertmessage.png)
 
 ## Features Left to Implement
 There are some features left to implement in this game. 
