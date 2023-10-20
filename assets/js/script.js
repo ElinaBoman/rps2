@@ -12,6 +12,8 @@ const resetScore = document.getElementById("reset-score");
 const enterUserName = document.getElementById("gamer-tag-info");
 const gameButtons = document.getElementById("player-button").children;
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
+const p1 = document.getElementById(username)
+
 
 //Event Listeners
 gameRulesSection.addEventListener("click", function (event) {
@@ -75,7 +77,7 @@ let maxTries = 11;
  * If userTries is less then maxTries the if code block will run. 
  * If UserTries = maxTries the else code block will run and alert the user to check score and reset game.
  */
-for ( var button of gameButtons) {
+for (var button of gameButtons) {
     const userChoice = button.id;
     button.addEventListener("click", function () {
         userTries++;

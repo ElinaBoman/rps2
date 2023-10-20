@@ -1,6 +1,7 @@
+
 # RPSLS
 
-RPSLS is short for rock, paper, scissor, lizard or Spock. This game is a version of the world wide famous game: rock, paper or scissors. The rules are simple, rock beats scissors, scissors cuts paper and paper covers rock (There is more information about the rules inside the game). In this game in the other hand, there are two more options to choose from, theese are lizard and Spock. This makes the game a bit more advanced and a lot more fun. This game is for everyone who would like to kill some time and have a relaxing moment. Because this game is played against the computer the user can play as many times as he/she likes.
+RPSLS is short for rock, paper, scissor, lizard or Spock. This game is a version of the world wide famous game: rock, paper or scissors. The rules are simple, rock beats scissors, scissors cuts paper and paper covers rock (There is more information about the rules inside the game). In this game on the other hand, there are two more options to choose from, theese are lizard and Spock. This makes the game a bit more advanced and a lot more fun. This game is for everyone who would like to kill some time and have a relaxing moment. Because this game is played against the computer the user can play as many times as he/she likes.
 
 To use the website, simply navigate to the following URL:
 <!--change this link--->
@@ -22,10 +23,10 @@ The design of this site is very simple using light colors in the background. Thi
 
 #### Rules-area
   When the user has choosen a username and clicked the button the rule-area appears. In the rule-area the game rules are explained to the user. The text is combined with a picture that also displays the same rules. This is to make the rules easy to understand as it's easy to get a bit confused by the rules. When the user is ready there is a button that reads: Let's go! When the user clicks this button or anywhere else on the page, the game-area opens. 
-
+<div aligne="center">
 ![Rules](/docs./rules.png) 
-
-------------![Rules](/docs./rulesimg.png)
+![Rules](/docs./rulesimg.png)
+</div>
 
 
  #### Game-area
@@ -166,7 +167,7 @@ During code malfunctions ChatGPT has helped trying to find different reasons to 
 The site was used to find information about Javascript in generel. Mostly to find information about for loops, if, else if and else statements.
 
 #### Last credits
-Code Institute tutorials
-My friend Annika Davies
-Google search
+- Code Institute tutorials
+- My friend Annika Davies
+- Google search
 
