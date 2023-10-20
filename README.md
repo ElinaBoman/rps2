@@ -89,10 +89,12 @@ There were also one undefined button but this variable is defined within the cod
 Jshint also warned about functions declared within the loop that refered to an outer scoop. This warning will also be investagated in the future.
 
 Before corrections:
+
 ![JavaScript testing](/docs./javascript-validation-before.png)
 After corrections:
 
 ![JavaScript testing](/docs./javascript-validation-after.png)
+
 https://jshint.com/
 #### Lighthouse testing
 ![Lighthouse](/docs./lighthouse-testing.png)
