@@ -38,8 +38,8 @@ There are some features left to implement in this game.
 * There will be a return button next to the home button so the user allways can revisit the rule-area once inside the game.
 * The winner of each round will hava a winner declaration inside the game-area instead of a window.alert.
 * Give the game more colors in the background with pictures of the rock and paper images to make it more appiling and playful.
-* Add audio to buttons inside game and mute function. 
-
+* Add audio to buttons inside game and mute function.
+* In the future there will be better game functions so that when the user hits the Reset score button, the remaining rounds of the game will also be reset.
 
 ## Technologies used
 - HTML
@@ -56,67 +56,93 @@ There are some features left to implement in this game.
 - Google photos
 
 ## Testing
-The website has been tested with Google DevTools. Different screen sizes has been tested to work on all devices. Functions of navbar has been adjusted to act as a toggle-bar on smaller devices, while on big screens it appers in the header to the right.
 
-The testing with Google DevTools has helped to localise problems with responsiveness. To solve these problems, media queries has been used for devices with (min-width: 768px) and (min-width: 900px).
-
-There are some estetic malfunctions with the toggle-bar. On smaller screens, when the toggle-menu is clicked, the menu takes up to much space on the left side. This issue will be fixed with adding some padding on the left side. The malfunction is under process.
-
-
+- All code has been validated trough W3C validator, Jshint.
+ During the bulding of the site Google devTools has been used to locate errors. Google devTools has also been used to set media queries and to locate JavaScript elements.
+ 
+- Buttons have been tested to make sure the right content is shown.
+- The icons have been tested to work after deployment.
+- Game logic has been tested to view the right outcome of the game. Also that the diffrent button-options is conected to the right element. 
+- The site has been tested on different browsers.
+  * Chrome
+  * Safari
+  * Firefox
+  
 
 ## Validator Testing
-- HTML
+####  HTML
+No errors were returned when passing through the official W3C validator. Validation HTML
+![html validation](/docs./html-checker.png)
 https://validator.w3.org/nu/#textarea
 
-No errors were returned when passing through the official W3C validator. Validation HTML
-![html validation](.png)
-
-
-- CSS
-<https://jigsaw.w3.org/css-validator/validator>
-
+  #### CSS
 No errors were found when passing through the official (Jigsaw) validator.
-Lighthouse testing
-![Game](gamearea.png)
+![CSS checker](/docs./css-checker.png)
+<https://jigsaw.w3.org/css-validator/validator>
+#### JavaScript 
+While passing the JavaScript code trough Jshint some warnings were corrected. There were some unused variabels that where removed from the const. Also some minor errors where corrected. 
+There were also one undefined button but this variable is defined within the code and is connected to the users choice. This error will be investegated in the future. 
+Jshint also warned about functions declared within the loop that refered to an outer scoop. This warning will also be investagated in the future.
 
--JavaScript 
-https://jshint.com/
-
+Before corrections:
 ![JavaScript testing](/docs./javascript-validation-before.png)
-![JavaScript testing](/docs./javascript-validation-after.png)
+After corrections:
 
-- Lighthouse testing
+![JavaScript testing](/docs./javascript-validation-after.png)
+https://jshint.com/
+#### Lighthouse testing
 ![Lighthouse](/docs./lighthouse-testing.png)
 
 ## Unfixed Bugs
-Footer buttons
-Description: There has been some issues with placement of the footer icons with the links to Facebook, Instagram and Youtube. The placement is intended to spread out evenly, but the icons stick together at the moment.
-Status: The issue is under investigation.
-Toggle-menu
-Description: The toggle-menu as mentioned previously in the testing section has some estetic malfunction. The issue is believed to have to do with padding on the left side.
-Status: Fixed.
-Since all the pictures are placed in divs instead of img-format, there are no aria-labels in the pictures. This issue has been noted. To fix this problem the pictures could be placed in img-format inside the divs.
-Status: Under investigation.
+  - There is some problem with the Let's go button in the rule-area. The user can click anywhere on the site to get to the game.
+    * Solution: Check EventListener.
+    *   Status: Under investegation.
+  - If the player hits the reset button before game is finished the remaing rounds won't reset. This means that the user has to finish every round for the game to function correctly.
+
+    * Solution: Write new and improved if and else statement for the game function. Make the number of rounds reset togheter with the score.
+    * Status: Under progress. 
+  - The home-button  should aligne closer to the game. There are some problems with the margin and padding of the html and body that causes the icon the wander of to the upper left corner on bigger screens.
+  *   Solution: Adjust html and body CSS.
+  *   Status: Under progress. 
+
 
 ## Deployment
-This website has been deployed to Github pages. The deployment process starts at GitHub repository and from there navigate to Settings tab. In the dropdown menu scroll down to Pages. Inside the Pages tab, choose Source, Deploy from branch. Under branch, enter main and / (root). Enter save. When the site is deployed there will be a ribbon. The live link can be found here:
+This website has been deployed to Github pages.
+1. First navigate to the Settings tab. 
+2. In the dropdown menu scroll down to Pages.
+3. Inside the Pages tab choose Source, Deploy from branch.
+4. Under the branch enter main and /(root).
+5. Enter save.
+6. When the site has been deployed a manilla folder will show up with a red ribbon. 
+
 
 ## Credits
-Content
 
-  - Font Awsome:
+#### Images
+
+#### FavIcon
+ Font Awsome:
+The favicon of a little house in the upper left corner has been taken from from the site Font Awesome.
+
+#### Fonts
+#### Readme.md
+#### Mentor
+#### Slack community
+
+#### Font Awsome:
   The favicon of a little house in the upper left corner has been taken from from the site Font Awesome.
 
-- ChatGPT:
+#### ChatGPT:
 Instructions on how play the games in the rule-area has been written together with ChatGPT. ChatGPT also helped creating the code to make computer decision random. This information has then been adjusted to fit this game. ChatGPT also helped creating the checkWinner function, creating suggestions for how to check the winner.
 During code malfunctions ChatGPT has helped trying to find different reasons to why code malfunctioned.
 
-- W3Schools:
+#### W3Schools:
 The site was used to find information about Javascript in generel. Mostly to find information about for loops, if, else if and else statements.
 
-- Slack comunity:
+####  Slack comunity:
   Big credits to the slack comunity espesially to Craig Hudson and Niclas Hugdahl who really took their time to help with bugs in the code.
 
+#### Last credits
 Code Institute tutorials
 Mentor Brian O'Hare
 My friend Annika Davies
