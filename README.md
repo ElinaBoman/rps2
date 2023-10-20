@@ -10,7 +10,9 @@ To use the website, simply navigate to the following URL:
 ![Responsive](/docs./responsive.png)
 
 ## Design
-The design of this site is very simple using light colors in the background. This is to not distract the user from the content. To make the site a bit more appeling there are orange borders around the main content. The orange color is matched with the orange details in the game-rules area. To create a softer look of the site, the display boxes have a soft border with rounded corners. This is to makes the site playful and easy on the eye.
+The design of this site is very simple using light colors in the background. This is to not distract the user from the content. To make the site a bit more appeling there are orange borders around the main content. The orange color is matched with the orange details in the game-rules area. To create a softer look of the site, the display boxes have a soft border with rounded corners. This is to makes the site playful and easy on the eye. The over all design was planed with web tool Balsamiq. This to plan how the game would look in bigger and smaller devices.
+
+![Balsamiq](/docs./balsaimq.png.png)
 
 ## Features
 ### Existing Features
