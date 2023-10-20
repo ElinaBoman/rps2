@@ -120,17 +120,43 @@ This website has been deployed to Github pages.
 
 #### Images
 
+- Open clip art:
+rpsls.png
+<https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock>
+
+- PNG EGG:
+rock.png 
+lizard.png
+https://www.pngegg.com/en/png-yiwgy
+
+
+- Flat icon:
+paper.png
+<https://www.flaticon.com/free-icon/paper-plane_312619>
+
+- Hi clipart:
+spock.png
+<https://www.hiclipart.com/free-transparent-background-png-clipart-zkhym>
+
+- Vecteezy: scissors.png
+<https://www.hiclipart.com/free-transparent-background-png-clipart-zkhym>
+
 #### FavIcon
- Font Awsome:
-The favicon of a little house in the upper left corner has been taken from from the site Font Awesome.
+- Font Awsome: The favicon of a little house in the upper left corner has been taken from from the site Font Awesome.
 
 #### Fonts
+- Goggle fonts: Tilt Neon- Regular 400 https://fonts.google.com/
+  
 #### Readme.md
-#### Mentor
-#### Slack community
+This readme.md has been inspired by:
+Github user gStarhigh:s project pro2.
+Code institutes sample readme.md.
 
-#### Font Awsome:
-  The favicon of a little house in the upper left corner has been taken from from the site Font Awesome.
+#### Mentor
+Big credits to my fantastic mentor Brian O'Hare.
+
+#### Slack community
+Big credits to the slack comunity, espesially to Craig Hudson and Niclas Hugdahl who really took their time to help with bugs in the code.
 
 #### ChatGPT:
 Instructions on how play the games in the rule-area has been written together with ChatGPT. ChatGPT also helped creating the code to make computer decision random. This information has then been adjusted to fit this game. ChatGPT also helped creating the checkWinner function, creating suggestions for how to check the winner.
@@ -139,11 +165,8 @@ During code malfunctions ChatGPT has helped trying to find different reasons to 
 #### W3Schools:
 The site was used to find information about Javascript in generel. Mostly to find information about for loops, if, else if and else statements.
 
-####  Slack comunity:
-  Big credits to the slack comunity espesially to Craig Hudson and Niclas Hugdahl who really took their time to help with bugs in the code.
-
 #### Last credits
 Code Institute tutorials
-Mentor Brian O'Hare
 My friend Annika Davies
 Google search
+
