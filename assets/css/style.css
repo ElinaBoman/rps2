@@ -1,15 +1,15 @@
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 
-html {
-    background-color: #ffffff;
-    align-items: center;
-}
-
 * {
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    align-items: center;
 }
 
 .hide {
@@ -20,17 +20,6 @@ html {
     text-align: center;
 }
 
-.home {
-    
-}
-#home-button {
-    width: 70px;
-    height: 70px;
-    background-color: #fbfcf8;
-    border: solid 2px darkslategray;
-    border-radius: 50%;
-}
-
 body {
     background-color: #ffff;
     display: flex;
@@ -39,6 +28,14 @@ body {
     padding: 10px;
     border-radius: 5%;
     min-height: 100vh;
+}
+
+#home-button {
+    width: 70px;
+    height: 70px;
+    background-color: #fbfcf8;
+    border: solid 2px darkslategray;
+    border-radius: 50%;
 }
 
 /* Enter username section*/
@@ -115,29 +112,36 @@ body {
     flex-direction: row;
 }
 
-/*img result*/
+/*img inside the player box*/
 #player-img {
     height: 100px;
     width: 100px;
 }
-
+/*img inside the computer box*/
 #computer-img {
     height: 100px;
     width: 100px;
 }
 
-/*This are for smaller screen sizes*/
+/*Media querys for smaller screen sizes*/
 @media screen and (max-width: 620px) {
     html {
     margin: 0;
     padding: 0;
-    }
+}
     
     body {
     padding: 5px;
     }
 
-/*Game rules section with media querys*/
+    /*Enter username form*/
+    #enter-username-section {
+    height: 400px;
+    width: 300px;
+    font-size: 85%;
+    }
+
+    /*Game rules section*/
     #game-rules-section {
         font-size: 75%;
         margin: 0px;
@@ -150,53 +154,47 @@ body {
         width: 200px;
     }
 
-/*Game area section with media querys*/
-#enter-username-section {
-    height: 400px;
-    width: 300px;
-    font-size: 85%;
-}
-
-#game-area {
+    /*Game area section with media querys*/
+    #game-area {
     background-color: #fbfcf8;
     border-radius: 15%;
     border: solid 2px rgb(241, 192, 101);
     font-family: "Tilt Neon", sans-serif;
     width: 100%;
-}
+    }
 
-.player-button {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    height: 40px;
-    width: 40px;
-}
+    .player-button {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 40px;
+        width: 40px;
+    }
 
-.player-score, .computer {
-    font-size: 60%;
-}
+    .player-score, .computer {
+        font-size: 60%;
+    }
 
-.player-score p {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+    .player-score p {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-.computer p {
-    padding-top: 0;
-    padding-bottom: 0;
+    .computer p {
+        padding-top: 0;
+        padding-bottom: 0;
 
-}
+    }
 
-#player-img, #computer-img {
-    height: 90px;
-    width: 90px;
-    padding-top: 0;
-}
+    #player-img, #computer-img {
+        height: 90px;
+        width: 90px;
+        padding-top: 0;
+    }
 
-.player-score,
-.computer {
-    width: 200px;
-    height: 230px;
-}
-}
+    .player-score,
+    .computer {
+        width: 200px;
+        height: 230px;
+    }
+    }
