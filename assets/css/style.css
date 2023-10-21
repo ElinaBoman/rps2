@@ -38,7 +38,7 @@ body {
     border-radius: 50%;
 }
 
-/* Enter username section*/
+/* Enter username section */
 #enter-username-section {
     border: 1px solid;
     left: 50%;
@@ -57,7 +57,7 @@ body {
     font-size: 150%;
 }
 
-/*Game-rules section*/
+/* Game rule section */
 #game-rules-section {
     background-color: #fbfcf8;
     border-radius: 15%;
@@ -76,7 +76,7 @@ body {
     width: 300px;
 }
 
-/*Game-area section*/
+/* Game area section */
 #game-area {
     background-color: #fbfcf8;
     width: 85%;
@@ -105,25 +105,25 @@ body {
     border-radius: 15%;
 }
 
-/* score area*/
+/* Score area */
 .score-area {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-/*img inside the player box*/
+/* Img inside the player box */
 #player-img {
     height: 100px;
     width: 100px;
 }
-/*img inside the computer box*/
+/* Img inside the computer box */
 #computer-img {
     height: 100px;
     width: 100px;
 }
 
-/*Media querys for smaller screen sizes*/
+/* Media querys for smaller screen sizes */
 @media screen and (max-width: 620px) {
     html {
     margin: 0;
@@ -134,14 +134,14 @@ body {
     padding: 5px;
     }
 
-    /*Enter username form*/
+    /* Enter username form */
     #enter-username-section {
     height: 400px;
     width: 300px;
     font-size: 85%;
     }
 
-    /*Game rules section*/
+    /* Game rule section */
     #game-rules-section {
         font-size: 75%;
         margin: 0px;
@@ -154,7 +154,7 @@ body {
         width: 200px;
     }
 
-    /*Game area section with media querys*/
+    /* Game area section with media querys */
     #game-area {
     background-color: #fbfcf8;
     border-radius: 15%;

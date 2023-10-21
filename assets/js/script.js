@@ -24,7 +24,7 @@ gameRulesSection.addEventListener("click", function (event) {
 });
 
 /**
- * This EventListener will reset the score when Reset score-button is clicked.
+ * This EventListener will reset the score when Reset score button is clicked.
  * (player-score) will have the innetext of 0.
  * (computer-score) will have the innertext 0.
  */
@@ -33,7 +33,7 @@ resetScore.addEventListener("click", () => {
     document.getElementById("computer-score").innerText = "0";
 });
 
-// Homebutton
+// Home button
 homeButton.addEventListener("click", function () {
     window.location.href = homeUrl;
 });
@@ -49,7 +49,7 @@ gameAreaSection.classList.add("hide");
 
 /**
  * This code will let the user know that there has to be text in the text-input.
- * If the textbox is an empty string the innerText will read a message to enter username.
+ * If the text box is an empty string the innerText will read a message to enter username.
  * If there is a text input the else code block will run and the hide class will remove from Rule area and be applied to enter
  * username form. 
  * p1 is the input text that will be enterd in the game. 
@@ -134,7 +134,7 @@ function determineWinner(userChoice, computerChoice) {
  * @param computerChoice this displays the computers choice that comes from the computerChoose function.
  * @param  result will display message in game with result.
  * This will send the result from the game and claim the winner of each round.
- * @param computerChoiseLowerCase will change the computerChoise tho lower case so the images can be paird with the button.
+ * @param computerChoiseLowerCase will change the computerChoise to lower case so images can be paired with the button.
  * @param playerImage will set the backround in the user div.
  * @param computerImage will set the background in the computer div.
 */
@@ -156,7 +156,7 @@ function incrementScore() {
 }
 
 /**
- * This function increments computers score, every time the answer is not isCorrect,
+ * This function increments computers score everytime the answer is not isCorrect,
  */
 function incrementWrongAnswer() {
     let computerScore = parseInt(document.getElementById("computer-score").innerText);
