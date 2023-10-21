@@ -33,15 +33,15 @@ There is a Home button up in the left corner for the user to get back to the Ent
 ![Login-form](/docs./loginform.png)
 ![alert message](/docs./errormsg.png)
 
-#### Rules-area
+#### Rule area
 When the user has choosen a username and clicked the button, the rule area appears. In the rulearea the game rules are explained to the user. The text is combined with a picture that also displays the same rules. This is to make the rules easy to understand as it's easy to get a bit confused by the rules. When the user is ready there is a button that reads: "Let's go!". When the user clicks this button or anywhere else on the page, the game area opens.
 
 ![Rules](/docs./rules.png) 
 ![Rules](/docs./rulesimg.png)
 
 
-#### Game-area
-The gamemarea exist of two closed boxes that displays the user and the computer choices. The result from each round will be displayed above the boxes with both user and computer choices. The winner will score one point from each winning round. These point are then displayed inside the player box. The game finishes after ten rounds and the result is displayed. If the user would like to continiue playing there is a Reset button that resets the scores. The fun can last forever! 
+#### Game area
+The game area exist of two closed boxes that displays the user and the computer choices. The result from each round will be displayed above the boxes with both user and computer choices. The winner will score one point from each winning round. These point are then displayed inside the player box. The game finishes after ten rounds and the result is displayed. If the user would like to continiue playing there is a Reset button that resets the scores. The fun can last forever! 
 
 ![Game](/docs./gamearea.png)
 ![Game](/docs./alertmessage.png)
@@ -83,28 +83,32 @@ During the bulding of the site Google devTools has been used to locate errors. G
 
 ## Validator Testing
 ####  HTML
-No errors were returned when passing through the official W3C validator. Validation HTML
-![html validation](/docs./html-checker.png)
+No errors were returned when passing through the official W3C validator.
 https://validator.w3.org/nu/#textarea
+![html validation](/docs./html-checker.png)
+
 
 #### CSS
 No errors were found when passing through the official (Jigsaw) validator.
-![CSS checker](/docs./css-checker.png)
 <https://jigsaw.w3.org/css-validator/validator>
+![CSS checker](/docs./css-checker.png)
+
 
 #### JavaScript 
 While passing the JavaScript code trough JSHint some warnings were corrected. There were some unused variabels that were removed from the const. Some minor errors were corrected.
 There were also one undefined button conected to userChoice. The problem occured because of a outcommented line of code. Problem has been fixed.
 JSHint also warned about functions declared within the loop that referred to an outer scope. The problem would be resolved by rewriting the whole loop and put the functions outside of the loop. This warning will be further investagated.
+<https://jshint.com/>
 
 Before corrections:
 
 ![JavaScript testing](/docs./javascript-validation-before.png)
+
 After corrections:
 
 ![JavaScript testing](/docs./javascript-validation-after.png)
 
-https://jshint.com/
+
 #### Lighthouse testing
 ![Lighthouse](/docs./lighthouse-testing.png)
 

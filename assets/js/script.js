@@ -16,6 +16,7 @@ const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
 
 
 //Event Listeners
+
 gameRulesSection.addEventListener("click", function (event) {
     event.preventDefault();
     gameRulesSection.classList.add("hide");
@@ -94,7 +95,7 @@ for (var button of gameButtons) {
 }
 
 /**
- * Computer choice function created with ChatGPT
+ * Computer choice function inspired by ChatGPT
  * This code will make the computer choice random. There are 5 different options to choose from.
  */
 function computerChoose() {
@@ -127,10 +128,11 @@ function determineWinner(userChoice, computerChoice) {
         return "You lose!";
     }
 }
+
 /**
- * @param userChoice 
- * @param computerChoice
- * @param  result
+ * @param userChoice refers to the users choice of button in the game.
+ * @param computerChoice this displays the computers choice that comes from the computerChoose function.
+ * @param  result will display message in game with result.
  * This will send the result from the game and claim the winner of each round.
  * @param computerChoiseLowerCase will change the computerChoise tho lower case so the images can be paird with the button.
  * @param playerImage will set the backround in the user div.
@@ -146,7 +148,7 @@ function displayResult(userChoice, computerChoice, result) {
 }
 
 /**
- * This function increment score.
+ * This function increments score.
 */
 function incrementScore() {
     let playerScore = parseInt(document.getElementById("player-score").innerText);
