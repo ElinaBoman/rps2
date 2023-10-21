@@ -108,8 +108,8 @@ https://jshint.com/
     * Solution: Write new and improved if and else statement for the game function. Make the number of rounds reset togheter with the score.
     * Status: Under progress. 
   - The home-button  should aligne closer to the game. There are some problems with the margin and padding of the html and body that causes the icon the wander of to the upper left corner on bigger screens.
-  *   Solution: Adjust html and body CSS.
-  *   Status: Under progress. 
+     *   Solution: Adjust html and body CSS.
+    *   Status: Under progress. 
 
 
 ## Deployment
@@ -162,7 +162,7 @@ Code institutes sample readme.md.
 Big credits to my fantastic mentor Brian O'Hare.
 
 #### Slack community
-Big credits to the slack comunity, espesially to Craig Hudson and Niclas Hugdahl who really took their time to help with bugs in the code.
+Credits to the slack comunity, espesially to Craig Hudson and Niclas Hugdahl who really took their time to help with bugs in the code.
 
 #### ChatGPT:
 Instructions on how play the games in the rule-area has been written together with ChatGPT. ChatGPT also helped creating the code to make computer decision random. This information has then been adjusted to fit this game. ChatGPT also helped creating the checkWinner function, creating suggestions for how to check the winner.

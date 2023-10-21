@@ -12,7 +12,7 @@ const resetScore = document.getElementById("reset-score");
 const enterUserName = document.getElementById("gamer-tag-info");
 const gameButtons = document.getElementById("player-button").children;
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
-const p1 = document.getElementById(username)
+
 
 
 //Event Listeners
@@ -72,6 +72,7 @@ form.addEventListener("submit", function (event) {
 //This is to limit number of tries before game ends.
 let userTries = 0;
 let maxTries = 11;
+
 /**
  * UserTries has to be less then maxTries. 
  * If userTries is less then maxTries the if code block will run. 
@@ -106,6 +107,7 @@ function computerChoose() {
  * @param userChoice refers to the users choice of button in the game.
  * @param computerChoice this displays the computers choice that comes from the computerChoose function.
  * @returns will display message in game with result.
+ * DetermineWinner function was inspired by chatGPT suggestion. 
  */
 function determineWinner(userChoice, computerChoice) {
     let isCorrect = (
