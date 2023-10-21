@@ -84,9 +84,9 @@ No errors were found when passing through the official (Jigsaw) validator.
 ![CSS checker](/docs./css-checker.png)
 <https://jigsaw.w3.org/css-validator/validator>
 #### JavaScript 
-While passing the JavaScript code trough Jshint some warnings were corrected. There were some unused variabels that where removed from the const. Also some minor errors where corrected. 
-There were also one undefined button but this variable is defined within the code and is connected to the users choice. This error will be investegated in the future. 
-Jshint also warned about functions declared within the loop that refered to an outer scoop. This warning will also be investagated in the future.
+While passing the JavaScript code trough Jshint some warnings were corrected. There were some unused variabels that where removed from the const. Also some minor errors where corrected.
+There were also one undefined button conected to userChoice. The problem occured because of a out commented line of code. Problem was fixed.
+Jshint also warned about functions declared within the loop that refered to an outer scoope. The problem would be resolved by rewriting the whole loop and put the functions outside of the loop. This warning will be further investagated in the future.
 
 Before corrections:
 
