@@ -84,12 +84,14 @@ During the bulding of the site Google devTools has been used to locate errors. G
 ## Validator Testing
 ####  HTML
 No errors were returned when passing through the official W3C validator.
+
 https://validator.w3.org/nu/#textarea
 ![html validation](/docs./html-checker.png)
 
 
 #### CSS
 No errors were found when passing through the official (Jigsaw) validator.
+
 <https://jigsaw.w3.org/css-validator/validator>
 ![CSS checker](/docs./css-checker.png)
 
@@ -98,6 +100,7 @@ No errors were found when passing through the official (Jigsaw) validator.
 While passing the JavaScript code trough JSHint some warnings were corrected. There were some unused variabels that were removed from the const. Some minor errors were corrected.
 There were also one undefined button conected to userChoice. The problem occured because of a outcommented line of code. Problem has been fixed.
 JSHint also warned about functions declared within the loop that referred to an outer scope. The problem would be resolved by rewriting the whole loop and put the functions outside of the loop. This warning will be further investagated.
+
 <https://jshint.com/>
 
 Before corrections:
