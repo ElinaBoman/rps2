@@ -6,13 +6,11 @@ const gameRulesSection = document.getElementById("game-rules-section");
 const gameAreaSection = document.getElementById("game-area");
 const playerImage = document.getElementById("player-img");
 const computerImage = document.getElementById("computer-img");
-//const homeUrl = 'https://8000-elinaboman-rps2-2udw505m6g.us2.codeanyapp.com/';
 const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
 const enterUserName = document.getElementById("gamer-tag-info");
 const gameButtons = document.getElementById("player-button").children;
 const options = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
-
 
 
 //Event Listeners
@@ -23,6 +21,10 @@ gameRulesSection.addEventListener("click", function (event) {
     gameAreaSection.classList.remove("hide");
 });
 
+// Home button
+homeButton.addEventListener("click", function () {
+window.location.href = "../index.html"
+});
 /**
  * This EventListener will reset the score when Reset score button is clicked.
  * (player-score) will have the innetext of 0.
@@ -31,13 +33,6 @@ gameRulesSection.addEventListener("click", function (event) {
 resetScore.addEventListener("click", () => {
     document.getElementById("player-score").innerText = "0";
     document.getElementById("computer-score").innerText = "0";
-});
-
-
-
-// Home button
-homeButton.addEventListener("click", function () {
-window.location.href = "../index.html"
 });
 
 /**
@@ -97,7 +92,7 @@ for (var button of gameButtons) {
 }
 
 /**
- * Computer choice function inspired by ChatGPT
+ * Computer choice function inspired by ChatGPT ChatGPT wrote Math.floor(math.random()).
  * This code will make the computer choice random. There are 5 different options to choose from.
  */
 function computerChoose() {
@@ -110,7 +105,7 @@ function computerChoose() {
  * @param userChoice refers to the users choice of button in the game.
  * @param computerChoice this displays the computers choice that comes from the computerChoose function.
  * @returns will display message in game with result.
- * DetermineWinner function was inspired by chatGPT suggestion. 
+ * DetermineWinner function was inspired by chatGPT suggestion on using logical AND (&&) and OR (||). 
  */
 function determineWinner(userChoice, computerChoice) {
     let isCorrect = (
