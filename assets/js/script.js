@@ -23,7 +23,7 @@ gameRulesSection.addEventListener("click", function (event) {
 
 // Home button
 homeButton.addEventListener("click", function () {
-window.location.href = "../index.html"
+window.location.href = "../../index.html"
 });
 /**
  * This EventListener will reset the score when Reset score button is clicked.
