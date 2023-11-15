@@ -21,12 +21,12 @@ gameRulesSection.addEventListener("click", function (event) {
     gameAreaSection.classList.remove("hide");
 });
 
-// Home button
+/** Home button
 homeButton.addEventListener("click", function () {
-window.location.href = "../index.html";
+window.location.href = "../../index.html";
 console.log(window.location.href)
 });
-
+*/
 /**
  * This EventListener will reset the score when Reset score button is clicked.
  * (player-score) will have the innetext of 0.
