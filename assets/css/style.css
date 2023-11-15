@@ -30,13 +30,24 @@ body {
     min-height: 100vh;
 }
 
+.home {
+    display: flex;
+    justify-content: center;
+
+}
 #home-button {
     width: 70px;
     height: 70px;
     background-color: #fbfcf8;
     border: solid 2px rgb(220, 154, 14);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
 }
+
 
 /* Enter username section */
 #enter-username-section {
@@ -44,7 +55,7 @@ body {
     left: 50%;
     right: 50%;
     align-self: center;
-    background-color: rgba(68, 68, 68, 0.5);
+    background-color: #fbfcf8;
     border-radius: 10%;
     border: solid 2px rgb(241, 192, 101);
     font-family: "Tilt Neon", sans-serif;
