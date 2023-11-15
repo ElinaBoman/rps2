@@ -6,7 +6,7 @@ const gameRulesSection = document.getElementById("game-rules-section");
 const gameAreaSection = document.getElementById("game-area");
 const playerImage = document.getElementById("player-img");
 const computerImage = document.getElementById("computer-img");
-const homeUrl = 'https://8000-elinaboman-rps2-2udw505m6g.us2.codeanyapp.com/';
+//const homeUrl = 'https://8000-elinaboman-rps2-2udw505m6g.us2.codeanyapp.com/';
 const homeButton = document.getElementById("home-button");
 const resetScore = document.getElementById("reset-score");
 const enterUserName = document.getElementById("gamer-tag-info");
@@ -33,9 +33,11 @@ resetScore.addEventListener("click", () => {
     document.getElementById("computer-score").innerText = "0";
 });
 
+
+
 // Home button
 homeButton.addEventListener("click", function () {
-    window.location.href = homeUrl;
+window.location.href = "../index.html"
 });
 
 /**
