@@ -157,9 +157,9 @@ https://www.pngegg.com/en/png-yiwgy
 paper.png
 <https://www.flaticon.com/free-icon/paper-plane_312619>
 
-- Hi clipart:
-spock.png
-<https://www.hiclipart.com/free-transparent-background-png-clipart-zkhym>
+- Pinterest:
+spock.jpeg
+https://www.pinterest.se/pin/338544096965260190/
 
 - Vecteezy: scissors.png
 <https://www.hiclipart.com/free-transparent-background-png-clipart-zkhym>
