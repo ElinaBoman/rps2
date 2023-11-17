@@ -100,18 +100,16 @@ body {
     align-self: center;
 }
 
+.spock {
+    filter: grayscale(100%);
+}
+
 .player-button {
     height: 100px;
     width: 100px;
     border: solid 2px rgb(227, 174, 84);
     border-radius: 50%;
     background-color: #ffff;
-}
-
-.player-buttons {
-    border: solid 2px orange !important;
-    border-radius: 50%;
-    background-color: #ffff !important;
 }
 
 .player-score,
