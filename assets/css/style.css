@@ -107,7 +107,7 @@ body {
 .player-button {
     height: 100px;
     width: 100px;
-    border: solid 2px rgb(227, 174, 84);
+    border: solid 2px rgb(227, 174, 84) !important;
     border-radius: 50%;
     background-color: #ffff;
 }
