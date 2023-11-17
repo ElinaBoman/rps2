@@ -100,10 +100,6 @@ body {
     align-self: center;
 }
 
-.spock {
-    filter: grayscale(100%);
-}
-
 .player-button {
     height: 100px;
     width: 100px;

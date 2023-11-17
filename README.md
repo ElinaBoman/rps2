@@ -68,6 +68,8 @@ There are some features left to implement in this game:
 - ChatGPT
 - Google devTools
 - Google photos
+- Pixlr 
+
 
 ## Testing
 All code has been validated trough W3C validator and Jshint.
@@ -126,7 +128,7 @@ After corrections:
 
 - The Home button should align closer to the game. There are some problems with the margin and padding of the html and body that causes the icon to wander off towords the upper left corner on bigger screens:
     *   Solution: Adjust html and body CSS
-    *   Status: Under progress
+    *   Status: Fixed
 
 
 ## Deployment
@@ -148,6 +150,7 @@ rpsls.png
 <https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock>
 
 - PNG EGG:
+spock.png
 rock.png 
 lizard.png
 https://www.pngegg.com/en/png-yiwgy
@@ -163,6 +166,9 @@ https://www.pinterest.se/pin/338544096965260190/
 
 - Vecteezy: scissors.png
 <https://www.hiclipart.com/free-transparent-background-png-clipart-zkhym>
+
+#### Picture photoshop 
+- Pixlr was used to set spock.png to black and white
 
 #### FavIcon
 - Font Awsome: The favicon of a little house in the upper left corner has been borrowed from from the site Font Awesome
