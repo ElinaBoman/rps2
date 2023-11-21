@@ -100,12 +100,18 @@ body {
     align-self: center;
 }
 
+
 .player-button {
     height: 100px;
     width: 100px;
     border: solid 2px rgb(227, 174, 84) !important;
     border-radius: 50%;
-    background-color: #ffff;
+    background-color:  #fbfcf8; 
+}
+
+#player-button button {
+    background: none;
+    border: none;
 }
 
 .player-score,
@@ -168,7 +174,7 @@ body {
 
     /* Game area section with media querys */
     #game-area {
-    background-color: #fbfcf8;
+    background-color: #ffff;
     border-radius: 15%;
     border: solid 2px rgb(241, 192, 101);
     font-family: "Tilt Neon", sans-serif;
