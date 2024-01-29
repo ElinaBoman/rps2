@@ -174,15 +174,15 @@ body {
         width: 200px;
     }
 
-    /* Error 404*/
-#error404 {
+/* Error 404*/
+.error-page {
     background-color: #f0a020;
+    margin: 50%;
 }
 
 .error-img {
-    height: 250px;
-    width: 250px;
-    position: inherit;
+    height: 50%;
+    width: 50%;
 }
 
     /* Game area section with media querys */
