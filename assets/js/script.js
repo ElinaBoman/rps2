@@ -164,3 +164,4 @@ function incrementWrongAnswer() {
     let computerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++computerScore;
 }
+
