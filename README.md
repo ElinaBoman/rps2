@@ -46,6 +46,12 @@ The game area exist of two closed boxes that displays the user and the computer 
 ![Game](/docs./gamearea.png)
 ![Game](/docs./alertmessage.png)
 
+#### 404 Errorpage
+
+The website has a unique error 404 page. This will redirect user back to home page if the user clicks on the provided link.
+
+![Game](/docs./errorpage.png)
+
 ## Features Left to Implement
 There are some features left to implement in this game:
 * There will be a Return button next to the Home button so the user always can revisit the rule area once inside the game
