@@ -218,3 +218,9 @@ body {
         height: 230px;
     }
     }
+
+/* Error 404*/
+
+#error404 {
+    background-color: #f0a020;
+}
