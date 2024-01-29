@@ -102,11 +102,11 @@ body {
 
 
 .player-button {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border: solid 2px rgb(227, 174, 84) !important;
     border-radius: 50%;
-    background-color:  #fbfcf8; 
+    background-color:  #f0a020; 
 }
 
 #player-button button {
@@ -134,11 +134,13 @@ body {
 #player-img {
     height: 100px;
     width: 100px;
+    margin-left: 2%;
 }
 /* Img inside the computer box */
 #computer-img {
     height: 100px;
     width: 100px;
+    margin-right: 2%;
 }
 
 /* Media querys for smaller screen sizes */
