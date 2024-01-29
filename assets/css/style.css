@@ -143,6 +143,27 @@ body {
     margin-right: 2%;
 }
 
+/* Error 404*/
+
+.error-body {
+    display: flex;
+    align-items: center;
+}
+
+.error-page {
+    background-color: #ebc485;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.error-img {
+    height: 200px;
+    width: 200px;
+}
+
 /* Media querys for smaller screen sizes */
 @media screen and (max-width: 620px) {
     html {
@@ -174,16 +195,6 @@ body {
         width: 200px;
     }
 
-/* Error 404*/
-.error-page {
-    background-color: #f0a020;
-    margin: 50%;
-}
-
-.error-img {
-    height: 50%;
-    width: 50%;
-}
 
     /* Game area section with media querys */
     #game-area {
