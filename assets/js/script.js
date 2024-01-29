@@ -131,10 +131,12 @@ function determineWinner(userChoice, computerChoice) {
 
 /**
  * @param userChoice refers to the users choice of button in the game.
- * @param computerChoice this displays the computers choice that comes from the computerChoose function.
+ * @param computerChoice this displays the computers choice that
+ *  comes from the computerChoose function.
  * @param  result will display message in game with result.
  * This will send the result from the game and claim the winner of each round.
- * @param computerChoiseLowerCase will change the computerChoise to lower case so images can be paired with the button.
+ * @param computerChoiseLowerCase will change the computerChoise
+ *  to lower case so images can be paired with the button.
  * @param playerImage will set the backround in the user div.
  * @param computerImage will set the background in the computer div.
 */

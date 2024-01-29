@@ -185,8 +185,8 @@ body {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
-        height: 40px;
-        width: 40px;
+        height: 70px;
+        width: 70px;
     }
 
     .player-score, .computer {
