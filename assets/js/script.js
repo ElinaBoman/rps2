@@ -49,8 +49,8 @@ gameAreaSection.classList.add("hide");
 /**
  * This code will let the user know that there has to be text in the text-input.
  * If the text box is an empty string the innerText will read a message to enter username.
- * If there is a text input the else code block will run and the hide class will remove from Rule area and be applied to enter
- * username form. 
+ * If there is a text input the else code block will run and the hide class will remove 
+ * from Rule area and be applied to enter username form. 
  * p1 is the input text that will be enterd in the game. 
  */
 form.addEventListener("submit", function (event) {
@@ -76,7 +76,8 @@ let maxTries = 11;
 /**
  * UserTries has to be less then maxTries. 
  * If userTries is less then maxTries the if code block will run. 
- * If UserTries = maxTries the else code block will run and alert the user to check score and reset game.
+ * If UserTries = maxTries the else code block will run and alert
+ *  the user to check score and reset game.
  */
 for (var button of gameButtons) {
     const userChoice = button.id;
